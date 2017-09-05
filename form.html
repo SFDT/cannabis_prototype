@@ -1,0 +1,173 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://sf-dahlia-pattern-library.herokuapp.com//assets/toolkit/styles/toolkit.css">
+<script src="https://sf-dahlia-pattern-library.herokuapp.com//assets/toolkit/scripts/toolkit.js"></script>
+</head>
+<body><button class="button-link skip-link sr-only ng-binding" ng-click="focusOnMainContent()">Skip to main content</button><div class="site-container">
+
+<!-- uiView: translate --><section ui-view="translate" class="ng-scope"><div class="translate-bar bar bg-tuatara ng-scope"><div class="row"><div class="medium-12 columns"><ul class="inline-list no-margin t-small right"><li class="c-iron show-for-medium-up">Select Language</li><li><a class="c-white" ui-sref="dahlia.welcome-spanish" href="/welcome-spanish">Español</a></li><li><a class="c-white t-ch" ui-sref="dahlia.welcome-chinese" href="/welcome-chinese">中文<span class="sr-only">Chinese</span></a></li><li><a class="c-white" ui-sref="dahlia.welcome-filipino" href="/welcome-filipino">Filipino</a></li></ul></div></div></div></section>
+
+<!-- uiView: version --><section ui-view="version" class="ng-scope"><div class="version-bar bar bg-primary ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We're offering even more! We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
+
+<!-- uiView: navigation --><section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row">
+
+<ul class="title-area">
+
+<li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="DAHLIA San Francisco Housing Portal" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li>
+<li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li>
+</ul><section class="top-bar-section">
+
+<!-- ngInclude: 'shared/templates/nav/_nav_items.html' -->
+<ul class="nav-menu right ng-scope" ng-include="'shared/templates/nav/_nav_items.html'">
+	<li class="ng-scope"><a ui-sref="dahlia.listings" href="/listings">Home</a></li>
+	<li class="ng-scope"><a ui-sref="dahlia.favorites" href="/favorites">Contact Us</a></li>
+</ul>
+</section></div></nav></ng-include><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-mobile.html'" class="ng-scope"></ng-include></section><div bs-loading-overlay="" class="loading-overlay">
+
+
+<!-- uiView: container --><section class="main-content ng-scope" id="main-content" ui-view="container"><div class="dash-container tall ng-scope"><section class="row collapse"><div class="medium-10 medium-centered columns fixed-width"><!-- ngIf: rememberedShortFormState --><form class="dash-card ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-valid-minlength" id="form-wrapper" name="form.signIn" ng-submit="signIn()" novalidate=""><header class="dash-header"><span class="header-badge"><span class="ui-icon ui-static ui-medium i-color"></span></span><h1 class="dash-title no-margin">Pre-Registration Form</h1></header><alert-box custom-message="accountError.messages.user" form-object="form.signIn" hide-alert="hideAlert" class="ng-isolate-scope"><div><div class="alert-box alert ng-hide" ng-class="getStyles()" ng-show="showAlert()" role="alert" aria-hidden="true">
+
+<!-- ngIf: !primary --><span class="alert-icon ng-scope" ng-if="!primary"><span class="ui-icon ui-static ui-medium" ng-class="isIconInverted"><svg><use xlink:href="#i-warning" xmlns:xlink="http://www.w3.org/1999/xlink"></use></svg></span></span>
+
+<!-- end ngIf: !primary --><button aria-label="Close Alert Box" class="button-link close" ng-click="close($event)">×</button><p class="alert-body ng-binding" ng-bind-html="alertText()">You'll need to resolve any errors before moving on.</p></div>
+
+<!-- ngIf: preferenceWarning && showAlert() --><div class="alert-notice alert ng-hide" ng-show="customSubMessage &amp;&amp; !hideAlert" aria-hidden="true"><p class="alert-notice_title ng-binding"></p></div></div></alert-box>
+
+<div class="dash-card-inner inset border-bottom"><div>
+<div class="form-group">
+<div class="form-address row ">
+	<div class="form-group-name large-6 columns">
+		<h3 class="form-label caps ng-binding">Business Account Number</h3>
+		<input type="text" name="name" placeholder="Link to" class="" />
+	</div>
+	<div class="form-group-name large-6 columns">
+		<h3 class="form-label caps ng-binding">Business Name</h3>
+		<input type="text" name="name" placeholder="From Business Registration Certificate" class="" />
+	</div>
+	<div class="form-group-street large-12 columns">
+		<h3 class="form-label caps ng-binding">Business Address</h3><span>If you have more than one address, you can add more later</span>
+		<input type="text" name="address" placeholder="If you have more than one address, you can add more later" class="" />
+	</div>
+	<div class="small-7 columns">
+		<h3 class="form-label caps ng-binding">City</h3>
+		<input type="text" name="city" placeholder="City Name" class="" />
+	</div>
+	<div class="small-5 columns">
+		<h3 class="form-label caps ng-binding">State</h3>
+		<select name="state" id="state" class="" data-width="auto">
+      <option value="">Select</option>
+        <option value="alabama">Alabama</option>
+        <option value="alaska">Alaska</option>
+        <option value="arizona">Arizona</option>
+        <option value="arkansas">Arkansas</option>
+        <option value="california">California</option>
+        <option value="colorado">Colorado</option>
+        <option value="connecticut">Connecticut</option>
+        <option value="delaware">Delaware</option>
+        <option value="district-of-columbia">District Of Columbia</option>
+        <option value="florida">Florida</option>
+        <option value="georgia">Georgia</option>
+        <option value="hawaii">Hawaii</option>
+        <option value="idaho">Idaho</option>
+        <option value="illinois">Illinois</option>
+        <option value="indiana">Indiana</option>
+        <option value="iowa">Iowa</option>
+        <option value="kansas">Kansas</option>
+        <option value="kentucky">Kentucky</option>
+        <option value="louisiana">Louisiana</option>
+        <option value="maine">Maine</option>
+        <option value="maryland">Maryland</option>
+        <option value="massachusetts">Massachusetts</option>
+        <option value="michigan">Michigan</option>
+        <option value="minnesota">Minnesota</option>
+        <option value="mississippi">Mississippi</option>
+        <option value="missouri">Missouri</option>
+        <option value="montana">Montana</option>
+        <option value="nebraska">Nebraska</option>
+        <option value="nevada">Nevada</option>
+        <option value="new-hampshire">New Hampshire</option>
+        <option value="new-jersey">New Jersey</option>
+        <option value="new-mexico">New Mexico</option>
+        <option value="new-york">New York</option>
+        <option value="north-carolina">North Carolina</option>
+        <option value="north-dakota">North Dakota</option>
+        <option value="ohio">Ohio</option>
+        <option value="oklahoma">Oklahoma</option>
+        <option value="oregon">Oregon</option>
+        <option value="pennsylvania">Pennsylvania</option>
+        <option value="rhode-island">Rhode Island</option>
+        <option value="south-carolina">South Carolina</option>
+        <option value="south-dakota">South Dakota</option>
+        <option value="tennessee">Tennessee</option>
+        <option value="texas">Texas</option>
+        <option value="utah">Utah</option>
+        <option value="vermont">Vermont</option>
+        <option value="virginia">Virginia</option>
+        <option value="washington">Washington</option>
+        <option value="west-virginia">West Virginia</option>
+        <option value="wisconsin">Wisconsin</option>
+        <option value="wyoming">Wyoming</option>
+    </select> </div>
+	<div class="form-group-street large-6 columns">
+		<h3 class="form-label caps ng-binding">Zip</h3>
+		<input type="text" name="zip" placeholder="Zip Code" class="" />
+	</div>
+	<div class="form-group-street large-6 columns">
+		<h3 class="form-label caps ng-binding">Phone Number</h3>
+		<input type="text" name="address" placeholder="555-555-5555" class="" />
+	</div>
+	<div class="form-group-street large-6 columns">
+		<h3 class="form-label caps ng-binding">Email</h3>
+		<input type="text" name="address" placeholder="you@myemail.com" class="" />
+	</div>
+	<div class="form-group-street large-6 columns">
+		<h3 class="form-label caps ng-binding">Business Account Number</h3>
+		<input type="text" name="address" placeholder="#" class="" />
+	</div>
+	<div class="form-group-street large-6 columns">
+		<h3 class="form-label caps ng-binding">Initial Date of Operation</h3>
+		<input type="text" name="address" placeholder="dd/mm/yyyy" class="" />
+	</div>
+	<div class="form-group-street large-6 columns">
+		<h3 class="form-label caps ng-binding">Proof of Operation</h3>
+		<input type="text" name="address" placeholder="" class="" />
+	</div>
+	<div class="form-group-street large-6 columns">
+		<h3 class="form-label caps ng-binding">Zoning</h3>
+		<input type="text" name="address" placeholder="" class="" />
+	</div>
+	<div class="form-group-street large-6 columns">
+		<h3 class="form-label caps ng-binding">License Types</h3>
+	<select name="options" id="options" class="" data-width="auto">
+  <option value="">Select one</option>
+      <option value="0">Option 0</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+      <option value="5">Option 5</option>
+</select>
+		<div class="radio">
+		<input type="radio" name="groupName" id="radio1" />
+		<label for="radio1">Medical Use</label>
+	</div>
+
+	<div class="radio">
+		<input type="radio" name="groupName" id="radio2" />
+		<label for="radio2">Adult Use</label>
+	</div>
+	</div>
+</div></div></div></div>
+
+<footer class="dash-header"><div class="form-group"><p class="t-small c-steel text-center padding-top no-margin"><input class="button no-margin primary" data-event="gtm-sign-in" id="sign-in" ng-disabled="submitDisabled" type="submit" value="submit"></p></div></footer>
+
+</form></div></section></div></section></div></div>
+
+<div class="footer-section"><div bs-loading-overlay="" class="loading-overlay">
+<!-- uiView: footer --><section ui-view="footer" class="ng-scope"><footer class="bg-tuatara padding-top--2x ng-scope"><div class="row text-center padding-bottom--2x"><div class="medium-12 columns"><img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="/images/logo-city.png"></div><div class="medium-8 medium-centered columns"><p class="c-iron"><a class="a-white" href="http://officeofcannabis.sfgov.org">San Francisco Office of Cannabis</a></p><p class="t-small c-iron margin-top--2x">For information, you may email to <a class="a-aluminum" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a>.</p></div></div><section class="footer-sock bg-ebony padding-top--2x padding-bottom"><div class="row"><div class="medium-3 large-4 columns small-only-text-center"><span class="c-aluminum">© City &amp; County of San Francisco</span></div><div class="medium-9 large-8 columns small-only-text-center">
+<ul class="inline-list">
+	<li><a class="a-aluminum" href="https://docs.google.com/forms/d/1M6doffR5XMoXoxyaZgkhAjRpUZMidUVmwCsuCpQTn18/viewform">Give Feedback</a></li>
+	<li><a class="a-aluminum" href="mailto:officeofcannabis@sfgov.org">Contact</a></li>
+</ul>
+</div></div></section></footer></section></div></div>
+</body></html>
