@@ -32,127 +32,326 @@
 
 <div class="dash-card-inner inset border-bottom"><div>
 <div class="form-group">
-<div class="form-address row ">
-	<div class="large-6 columns">
-		<h3 class="form-label caps ng-binding">Business Account Number</h3>
+<!-- uiView: Business Certificate -->
+<div class="row ">
+	<div class="form-header no-border">
+		<h3 class="dash-title t-gamma t-sans">Information from Business Registration Certificate</h3>
+	</div>
+
+	<div class="large-12 columns">
+		<h3 class="form-label no-caps ng-binding">Business Account Number<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="xxxxxxx" class="" />
 	</div>
 
-	<div class="large-6 columns">
-		<h3 class="form-label caps ng-binding">Location ID</h3>
+	<div class="large-12 columns">
+		<h3 class="form-label no-caps ng-binding">Trade Name (DBA)<span class="c-alert">*</span></h3>
+		<input type="text" name="name" placeholder="" class="" />
+	</div>
+
+	<div class="large-12 columns">
+		<h3 class="form-label no-caps ng-binding">Business<span class="c-alert">*</span></h3>
+		<div class="t-small p-small c-steel">(name of the parent company or, if no parent company, owner’s last name, first name)</div>
+		<input type="text" name="name" placeholder="" class="" />
+	</div>
+
+	<div class="large-12 columns">
+		<h3 class="form-label no-caps ng-binding">Location ID<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="xxxxxxx-xx-xxx" class="" />
 	</div>
 
-	<div class="large-6 columns">
-		<h3 class="form-label caps ng-binding">Trade Name (DBA)</h3>
-		<input type="text" name="name" placeholder="" class="" />
-	</div>
-
-	<div class="large-6 columns">
-		<h3 class="form-label caps ng-binding">Business Location</h3>
+	<div class="large-5 columns">
+		<h3 class="form-label no-caps ng-binding">Business Location<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="Street Number, Street Name" class="" />
 	</div>
 
-	<div class="large-5 columns">
-		<h3 class="form-label caps ng-binding">Business</h3>
-		<input type="text" name="name" placeholder="" class="" />
-	</div>
-
-	<div class="small-3 columns">
-		<h3 class="form-label caps ng-binding">City</h3>
+	<div class="large-3 columns">
+		<h3 class="form-label no-caps ng-binding">City<span class="c-alert">*</span></h3>
 		<input type="text" value="San Francisco" name="name" placeholder="" class="" />
 	</div>
 
-	<div class="small-2 columns">
-		<h3 class="form-label caps ng-binding">State</h3>
+	<div class="large-2 columns">
+		<h3 class="form-label no-caps ng-binding">State<span class="c-alert">*</span></h3>
 		<input type="text" value="CA" name="name" placeholder="" class="" />
 	</div>
 
-	<div class="small-2 columns">
-		<h3 class="form-label caps ng-binding">Zip</h3>
+	<div class="large-2 columns">
+		<h3 class="form-label no-caps ng-binding">Zip<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
 	<div class="large-6 columns">
-		<h3 class="form-label caps ng-binding">Contact Email</h3>
+		<h3 class="form-label no-caps ng-binding">Parcel (Block/Lot)<span class="c-alert">*</span></h3>
+		<input type="text" name="name" placeholder="" class="" />
+	</div>
+
+	<div class="large-6 columns">
+		<h3 class="form-label no-caps ng-binding">Zoning Districts<span class="c-alert">*</span></h3>
+		<input type="text" name="name" placeholder="" class="" />
+	</div>
+
+	<div class="large-6 columns">
+		<h3 class="form-label no-caps ng-binding">Contact Email<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="name@email.com" class="" />
 	</div>
 
 	<div class="large-6 columns">
-		<h3 class="form-label caps ng-binding">Phone</h3>
+		<h3 class="form-label no-caps ng-binding">Phone</h3>
 		<input type="text" name="name" placeholder="(555) 555-5555" class="" />
 	</div>
-
 </div>
 
-
-<div class="form-business row">
+<!-- uiView: About Your Business -->
 	<div class="form-header">
 		<h3 class="dash-title t-gamma t-sans">About Your Business</h3>
 	</div>
 
-	<div class="large-4 columns">
-		<h3 class="form-label caps ng-binding">Operation Start Date</h3>
-		<input type="text" name="address" placeholder="mm/dd/yyyy" class="" />
+<div class="form-business row">
+	
+	<div class="form-attach row">
+		<div class="large-12 columns">
+			<h3 class="form-question form-label no-caps ng-binding">Proof of Operation Start Date</h3>
+			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date you started operating. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
+		</div>
+		<div class="large-4 columns">
+			<h3 class="form-label no-caps ng-binding">Start Date</h3>
+			<input type="text" name="address" placeholder="mm/dd/yyyy" class="" />
+		</div>
+
+		<div class="large-8 columns">
+			<h3 class="form-label no-caps ng-binding">Attachment</h3>
+			<div class="form-field">
+			<span class="label-dollar">Attach .gif, .pdf...</span>
+			<input type="file" name="address" placeholder="" class="" multiple/>
+			</div>
+		</div>
 	</div>
 
-	<div class="large-8 columns">
-		<h3 class="form-label caps ng-binding">Attachment</h3>
-		<div class="form-field">
-		<span class="label-dollar">Attach .gif, .pdf...</span>
-		<input type="file" name="address" placeholder="" class="" /></div>
+
+	<div class="form-attach row">
+		<div class="large-12 columns">
+			<h3 class="form-question border-top form-label no-caps ng-binding">Government Issued</h3>
+			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date you started operating. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
+		</div>
+		<div class="large-4 columns">
+			<h3 class="form-label no-caps ng-binding">Issued Department</h3>
+			<input type="text" name="address" placeholder="" class="" />
+		</div>
+
+		<div class="large-8 columns">
+			<h3 class="form-label no-caps ng-binding">Attachment</h3>
+			<div class="form-field">
+			<span class="label-dollar">Attach .gif, .pdf...</span>
+			<input type="file" name="address" placeholder="" class="" multiple/>
+			</div>
+		</div>
 	</div>
 
-	<div class="large-12 columns form-space">
-		<div class="t-small p-small c-steel">We need proof of the date you started trading. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
+	<div class="form-attach row">
+		<div class="large-12 columns">
+			<h3 class="form-question border-top form-label no-caps ng-binding">Do you own or lease your business premises?</h3>
+			<div class="radio-group-inline ">
+				<p class="radio-inline">
+					<input type="radio" name="income" value="income-month" id="income-month">
+					<label class="radio-inline_label" for="income-month">Own</label>
+				</p>
+				<p class="radio-inline">
+					<input type="radio" name="income" value="income-year" id="income-year">
+					<label class="radio-inline_label" for="income-year">Lease</label>
+				</p>
+			</div>
+			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date you started operating. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
+		</div>
+
+		<div class="large-12 columns">
+			<h3 class="form-label no-caps ng-binding">Attachment</h3>
+			<div class="form-field">
+			<span class="label-dollar">Attach .gif, .pdf...</span>
+			<input type="file" name="address" placeholder="" class="" multiple/>
+			</div>
+		</div>
 	</div>
 
-	<div class="large-4 columns">
-		<h3 class="form-label caps ng-binding">Business premises ownership?</h3>
-		<div class="radio-group-inline ">
+</div>
+
+<!-- uiView: Permit Type -->
+<div class="form-type row">
+	<div class="form-header">
+		<h3 class="dash-title t-gamma t-sans">Permit Type</h3>
+	</div>
+
+	<div class="form-space large-12 columns">
+		<h3 class="form-question form-label row ng-binding">In 2018, what permit type(s) do you intend to apply for at this address? Check all that apply:</h3>
+<table role="grid">
+	<thead>
+		<tr>
+			<th scope="col">Permit Type</th>
+			<th scope="col">Medical Use</th>
+			<th scope="col">Adult Use</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td scope="row">
+				Cultivation
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="cult-med" id="cult-med" />
+					<label for="cult-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="cult-adu" id="cult-adu" />
+					<label for="cult-adu"></label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">
+				Distribution
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="dist-med" id="dist-med" />
+					<label for="dist-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="dist-adu" id="dist-adu" />
+					<label for="dist-adu"></label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">
+				Manufacturing (level 1) <small><br>Not using solvents, or using only nonvolatile solvents</small>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mfg1-med" id="mfg1-med" />
+					<label for="mfg1-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mfg1-adu" id="mfg1-adu" />
+					<label for="mfg1-adu"></label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">
+				Manufacturing (level 2) <small><br>Using volatile solvents</small>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mfg2-med" id="mfg2-med" />
+					<label for="mfg2-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mfg2-adu" id="mfg2-adu" />
+					<label for="mfg2-adu"></label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">
+				Microbusiness <small><br>Cannabis businesses that cultivate, distribute, manufacture and/or sell cannabis products with a premises of less than 10,000 square feet.</small>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mbiz-med" id="mbiz-med" />
+					<label for="mbiz-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mbiz-adu" id="mbiz-adu" />
+					<label for="mbiz-adu"></label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">
+				Retail (storefront and other sales)
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="ret1-med" id="ret1-med" />
+					<label for="ret1-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="ret1-adu" id="ret1-adu" />
+					<label for="ret1-adu"></label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">
+				Retail (non-storefront)
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="ret2-med" id="ret2-med" />
+					<label for="ret2-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="ret2-adu" id="ret2-adu" />
+					<label for="ret2-adu"></label>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td scope="row">
+				Testing Laboratory
+			</td>
+			<td colspan="2">
+				<div class="checkbox">
+					<input type="checkbox" name="tlab" id="tlab" />
+					<label for="tlab"></label>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<div class="large-12 columns">
+		<h3 class="form-label ng-binding">Do you have another cannabis business premises?</h3>
+			<div class="radio-group-inline">
 			<p class="radio-inline">
-				<input type="radio" name="income" value="income-month" id="income-month">
-				<label class="radio-inline_label" for="income-month">Own</label>
+				<input type="radio" name="biz-1" id="biz-1">
+				<label for="biz-1">Yes</label>
 			</p>
 			<p class="radio-inline">
-				<input type="radio" name="income" value="income-year" id="income-year">
-				<label class="radio-inline_label" for="income-year">Lease</label>
+				<input type="radio" name="biz-2" id="biz-2">
+				<label for="biz-2">No</label>
 			</p>
 		</div>
 	</div>
 
-	
 
-	<div class="large-8 columns">
-		<h3 class="form-label caps ng-binding">Attachment</h3>
-		<div class="form-field">
-		<span class="label-dollar">Attach .gif, .pdf...</span>
-		<input type="file" name="address" placeholder="" class="" /></div>
+</div></div></div></div>
+
+
+<div class="form-submit">
+<div class="button-pager">
+		<div class="button-pager_row primary">
+			<button class="button primary">Submit</button>
+		</div>
+		<div class="button-pager_row ">
+			<button class="button primary">Save, add another address</button>
+		</div>
 	</div>
-
-	<div class="large-12 columns form-space">
-		<div class="t-small p-small c-steel">You need to attach a notarized letter from your landlord consenting to any cannabis business operations on the premises. (You can attach a scan or a photo from your smartphone)</div>
-	</div>
-
-
-
-
-
-
-
-
-
-	<div class="large-12 columns">
-		<h3 class="form-label caps ng-binding">Zoning</h3>
-		<div class="form-text t-small p-small c-steel">What zoning use district is your business in? Find out at: <a href="http://sf-planning.org/find-my-zoning">http://sf-planning.org/find-my-zoning</a></div>
-		<input type="text" name="address" placeholder="District #" class="" />
-	</div>
-	
-
 </div>
-</div></div></div>
-
-<footer class="dash-header"><div class="form-group"><p class="t-small c-steel text-center padding-top no-margin"><input class="button no-margin primary" data-event="gtm-sign-in" id="sign-in" ng-disabled="submitDisabled" type="submit" value="submit"></p></div></footer>
 
 </form></div></section></div></section></div></div>
 
