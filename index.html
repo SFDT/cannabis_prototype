@@ -7,73 +7,92 @@
 
 <div class="site-container">
 
-<!-- uiView: version --><section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
+<!-- uiView: version -->
+<section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is NEW. <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform"><strong>Let us know what you think</strong></a>, so we can make it better.</p></div></div></div></section>
 
-<!-- uiView: navigation --><section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul>
+<!-- uiView: navigation -->
+<section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="index.html">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul>
 
 <section class="top-bar-section">
 
 <!-- ngInclude: 'shared/templates/nav/_nav_items.html' -->
 </section></div></nav></ng-include><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-mobile.html'" class="ng-scope"></ng-include></section><div bs-loading-overlay="" class="loading-overlay">
 
-<!-- uiView: container --><section class="main-content ng-scope" id="main-content" ui-view="container"><section class="splash-header bg-image ng-scope"><div class="row"><header class="hero-header text-center"><h1 class="hero-title t-sans c-white ng-binding">Pre-registration Discovery Phase</h1><p class="hero-text t-epsilon g-epsilon c-white">If you have a cannabis business operating now, you need to pre-register to make sure you have all the permits you need to operate in 2018. We’ll work with businesses already operating legally to make sure they have a say in how cannabis is regulated in San Francisco.</p></header></div></section>
+<!-- uiView: container -->
+<section class="main-content ng-scope" id="main-content" ui-view="container">
+<section class="splash-header bg-image ng-scope">
+	<div class="row">
+		<header class="hero-header">
+			<div class="large-4 columns">
+				<h1 class="hero-title t-sans c-white ng-binding">Sign Up Today</h1>
+			</div>
+			<div class="row">
+				<div class="large-7 columns">
+					<p class="hero-text t-base g-base c-white">Starting in the fall, San Francisco will be developing our commercial cannabis business regulatory structure, and we want to make sure everyone has a say in the development of the regulatory structure, including you.</p>
+					<p class="hero-text t-base g-base c-white">You will be able to comment on the legislation creating the regulatory structure for cannabis businesses as soon as it’s introduced by the City. The comment period will be 30 days.</p>
+				</div>
+			</div>
+		</header>
+	</div>
+</section>
 
 
 <section class="splash-wells row collapse ng-scope">
 <section class="splash-message ng-scope">
 <section class="row margin-bottom--2x ng-scope">
-<div class="row"><div class="large-12 columns"><div class="block--short">
-
+<div class="row">
+<div class="large-12 text-center columns">
 
 <section class="break-section-big"></section>
 	<div class="page-header">
-		<h3 class="t-alpha t-sans">To complete the pre-registration</h3>
+		<h3 class="t-alpha t-sans cap">Cannabis business registration</h3>
 		<img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../cannabis_prototype/images/logo-city.png">
 	</div>
-	<h2 class="h-caps-lined">you will need</h2>
-<section class="break-section-tiny"></section>
+	<div class="large-8 medium-centered columns">
+		<p class="t-delta g-delta c-steel">If you have a cannabis business operating in San Francisco now, the City invites you to register with the Office of Cannabis. <br>Only registered businesses will be eligible to receive a Temporary Permit to Operate in January 2018. </p>
+	</div>
+<section class="break-section-small"></section>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
 			<span class="content-card_number">1</span>
-			<h4 class="content-card_title">Business registration certificate</h4>
+			<h4 class="content-card_title">Contact Information</h4>
+		</header>
+	</div>
+
+	<div class="content-card">
+		<header class="content-card_ordered">
+			<span class="content-card_number">1</span>
+			<h4 class="content-card_title"><a target="blank" href="https://businessportal.sfgov.org/reg-cert">Business registration certificate</a></h4>
 		</header>
 	</div>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
 			<span class="content-card_number">2</span>
-			<h4 class="content-card_title">Company name and address</h4>
-		</header>
-	</div>
-
-	<div class="content-card">
-		<header class="content-card_ordered">
-			<span class="content-card_number">3</span>
-			<h4 class="content-card_title">SF business account number</h4>
-			<p class="c-steel"><a target="blank" href="http://sftreasurer.org/registration">View Link</a></p>
-		</header>
-	</div>
-
-	<div class="content-card">
-		<header class="content-card_ordered">
-			<span class="content-card_number">4</span>
 			<h4 class="content-card_title">The date you started operating</h4>
 		</header>
 	</div>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
-			<span class="content-card_number">5</span>
-			<h4 class="content-card_title">Proof of when you started operating</h4>
+			<span class="content-card_number">3</span>
+			<h4 class="content-card_title">Proof <span class="lowercase">of</span> when you started operating</h4>
 		</header>
 	</div>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
-			<span class="content-card_number">6</span>
-			<h4 class="content-card_title">A copy of the deed or a notarized letter</h4>
-			<p class="c-steel">From your landlord consenting to any cannabis business operations on their premises. (You can take a copy from a smartphone)</p>
+			<span class="content-card_number">4</span>
+			<h4 class="content-card_title">Copies <span class="lowercase">of</span> all permits, licences <span class="lowercase">and</span> registrations</h4>
+		</header>
+	</div>
+
+	<div class="content-card">
+		<header class="content-card_ordered">
+			<span class="content-card_number">5</span>
+			<h4 class="content-card_title">The deed <span class="lowercase">or a</span> notarized letter</h4>
+			<p class="c-steel">your deed or a notarized letter from your landlord consenting to any cannabis business operations on the premises. (You can take a copy from a smartphone).</p>
 		</header>
 	</div>
 
@@ -81,19 +100,35 @@
 	<a class="button primary" href="form.html" title="Sign Up Today">Pre-register Now</a>
 <section class="break-section-big"></section>
 
-	<div class="splash-message_panel row"><p class="t-large c-charcoal ng-binding">The City is pre-registering existing businesses to establish a new permitting process. The Board of Supervisors will be determining who will be eligible for permits this fall.</p><br><p class="t-large c-charcoal ng-binding">If you want to apply for permits for a new business, leave your email and we’ll let you know when we are accepting applications for permits for new cannabis businesses.</p>
-		<section class="break-section-tiny"></section>
-		<div class="form-email">
-			<input type="email" placeholder="Email Address" class="" />
+<div class="row">
+	<div class="large-10 medium-centered columns bg-dust">
+		<div class="block large-10 medium-centered columns form-email">
+			<figure class="block-icon">
+				<img alt="Mail Icon" ng-src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-mail-411f07e0458ebc3cb0c83d5f5bb7a6db0f23905ca4f57465112bcf1ddb12bf80.png" src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-mail-411f07e0458ebc3cb0c83d5f5bb7a6db0f23905ca4f57465112bcf1ddb12bf80.png"></figure>
+			<h2 class="gamma t-sans c-oil">Get emailed when we're accepting applications</h2>
+			<p class="t-small c-charcoal ng-binding">If you don’t have the information we’re requesting, and want to apply for permits for a new business, leave your email below. We will let you know when we’re accepting applications for new cannabis businesses.</p>
+					
+			<section class="break-section-tiny"></section>
+
+			<div class="large-9 columns">
+				<input type="email" placeholder="Email Address" class="" />
+			</div>
+
+			<div class="large-3 columns">
+				<a class="button small ghost-white" href="http://visitor.r20.constantcontact.com/manage/optin?v=001-rR5XWQW7dMuyJHtE1VRCKsbO11jmYRO8H1uzzSs3-D1IpgLqynO4XfpWqC1VNsQH18uAmSg3KefN0VH-e-qJPb97nMdJxJE9qz_-Vw8kA8%3D" title="Sign Up Today">Sign Up</a>
+			</div>
 		</div>
 	</div>
+</div>
 
-
-
-</div></div></div>
+</div>
+</div>
+</section>
+</section>
+</section>
 </section>
 
-</section></section></section></div></div>
+</div></div>
 <div class="footer-section"><div bs-loading-overlay="" class="loading-overlay">
 
 <!-- uiView: footer -->

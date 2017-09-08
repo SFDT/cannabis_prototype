@@ -5278,12 +5278,28 @@ hr.tall {
     padding-right: 16px !important; } }
 
 @media screen and (min-width: 48.0625em) {
+  .padding--1x, .padding-bottom--1x {
+    padding-bottom: 8px !important; } }
+
+@media screen and (max-width: 48.0625em) {
+  .padding--1x, .padding-bottom--1x {
+    padding-bottom: 4px !important; } }
+
+@media screen and (min-width: 48.0625em) {
   .padding--2x, .padding-bottom--2x {
     padding-bottom: 32px !important; } }
 
 @media screen and (max-width: 48.0625em) {
   .padding--2x, .padding-bottom--2x {
     padding-bottom: 16px !important; } }
+
+@media screen and (min-width: 48.0625em) {
+  .padding--3x, .padding-bottom--3x {
+    padding-bottom: 64px !important; } }
+
+@media screen and (max-width: 48.0625em) {
+  .padding--3x, .padding-bottom--3x {
+    padding-bottom: 32px !important; } }
 
 @media screen and (min-width: 48.0625em) {
   .padding--2x, .padding-left--2x {
@@ -6963,6 +6979,10 @@ label {
 .form-item:last-of-type {
   padding-bottom: 0; }
 
+.form-business .checkbox label {
+  text-align: left !important;
+}
+
 .form-label, form label, .form-group label,
 .form-item label {
   font-size: 0.875rem;
@@ -7003,15 +7023,14 @@ label {
   .form-header p:last-of-type {
     margin-bottom: 0; }
 
+.form-text {
+  color: red;
+}
 
 .form-question {
   font-size: 1.25rem;
   letter-spacing: 0 !important;
-  margin: 0 0 .5rem;
-  padding: 2rem 0 0;}
-
-.form-instruction {
-  margin: 0 0 1.5rem;}
+  padding: 3rem 0 1.5rem; }
 
 .form-info-card {
     background-color: #f5f8f9;
@@ -10236,6 +10255,14 @@ input.icon-input-field {
       padding-left: 0.125rem;
       padding-right: 0.125rem; } }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
+.cap {
+  text-transform: capitalize;
+}
+
 @media only screen and (max-width: 48em) {
   .top-bar-section ul.nav-menu {
     display: none; } }
@@ -11127,13 +11154,9 @@ body.body-block {
       padding: 6rem 1rem 4rem 1rem; } }
 
 .hero-title {
-  text-align: left;
     font-weight: 600;
-    font-size: 3.5rem;
-    width: 50%;
+    font-size: 3rem;
     line-height: 1.2;
-    float: left;
-    margin-bottom: 1rem;
 }
 @media only screen and (max-width: 48em) {
   .hero-title {

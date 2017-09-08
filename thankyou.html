@@ -8,45 +8,39 @@
 <div class="site-container">
 
 <!-- uiView: version -->
-<section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
+<section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is NEW. <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform"><strong>Let us know what you think</strong></a>, so we can make it better.</p></div></div></div></section>
 
 <!-- uiView: navigation -->
-<section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul><section class="top-bar-section">
+<section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="index.html">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul><section class="top-bar-section">
 
 <!-- ngInclude: 'shared/templates/nav/_nav_items.html' -->
 </section></div></nav></ng-include><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-mobile.html'" class="ng-scope"></ng-include></section><div bs-loading-overlay="" class="loading-overlay">
 
 <!-- uiView: container --><section class="main-content ng-scope" id="main-content" ui-view="container">
 
-<header class="lead-header bg-image ng-scope"><div class="row"><div class="large-12 columns"><hgroup class="lead-header_group"><h1 class="lead-header_title c-white">Thank You</h1><div class="medium-8 columns no-padding show-for-medium-up"><p class="t-epsilon t-sans c-white">We will confirm the zoning use district of the property.</p></div></hgroup></div></div></header>
+<header class="lead-header bg-image ng-scope"><div class="row"><div class="large-12 columns"><hgroup class="lead-header_group"><h1 class="lead-header_title c-white">Thank You</h1><div class="medium-8 columns no-padding show-for-medium-up"><p class="t-epsilon t-sans c-white">We will verify the information you submitted.</p></div></hgroup></div></div></header>
 
 <!-- uiView: content area -->
 <section class="row p-relative ng-scope">
 	<div class="medium-8 columns no-padding">
-		<div class="block--icon">
-			<figure class="block-icon"><img alt="Phone Icon" ng-src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-phone-4f82383f55ca492fde92842ca4a2198099716fc94a2cdad368f4f0d8be78a6c1.png" src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-phone-4f82383f55ca492fde92842ca4a2198099716fc94a2cdad368f4f0d8be78a6c1.png"></figure>
-			<h2 class="t-gamma margin-bottom--2x">Housing Counselors</h2>
-			<p class="t-base t-sans c-oil margin-bottom--2x">For more help, we suggest talking with a housing counselor to explore your options.</p>
-			<a class="button large ghost-white" ui-sref="dahlia.housing-counselors" href="/housing-counselors">Find a Housing Counselor</a>
-		</div>
 
 		<section class="section--wide bg-dust">
 			<div class="block--icon text-center bg-dust">
-				<figure class="block-icon"><img alt="Translation Icon" ng-src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-trans-4a4c7a6795ea25c2cd1c2c2b3c72253b36cb0f3c98e8b2a21346f751230a5868.png" src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-trans-4a4c7a6795ea25c2cd1c2c2b3c72253b36cb0f3c98e8b2a21346f751230a5868.png"></figure>
-				<h2 class="t-gamma margin-bottom--2x">Language Support</h2>
-				<p class="t-base t-sans c-oil margin-bottom--2x">Download translations in multiple languages, and quickly contact counselors providing language support.</p>
-				<a title="Español" class="button large ghost-white expand-small" ui-sref="dahlia.welcome-spanish" href="/welcome-spanish">Español</a> 
-				<a title="中文" class="button large ghost-white expand-small t-ch" ui-sref="dahlia.welcome-chinese" href="/welcome-chinese">中文</a> 
-				<a title="Filipino" class="button large ghost-white expand-small" ui-sref="dahlia.welcome-filipino" href="/welcome-filipino">Filipino</a>
+				<figure class="block-icon"><img alt="Phone Icon" ng-src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-phone-4f82383f55ca492fde92842ca4a2198099716fc94a2cdad368f4f0d8be78a6c1.png" src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-phone-4f82383f55ca492fde92842ca4a2198099716fc94a2cdad368f4f0d8be78a6c1.png"></figure>
+				<h2 class="t-gamma cap argin-bottom--2x">business education sessions</h2>
+				<p class="t-base t-sans c-oil margin-bottom--1x">The City will be offering business education sessions on topics like weights and measures and fire prevention information to help you reach compliance in 2018.</p>
+				<p class="t-base t-sans c-oil margin-bottom--2x">You can leave an email address to be on the mailing list for these sessions.</p>
+				
+				<div class="large-9 columns">
+				<input type="email" placeholder="Email Address" class="" />
+			</div>
+
+			<div class="large-3 columns">
+				<a class="button small ghost-white" href="http://visitor.r20.constantcontact.com/manage/optin?v=001-rR5XWQW7dMuyJHtE1VRCKsbO11jmYRO8H1uzzSs3-D1IpgLqynO4XfpWqC1VNsQH18uAmSg3KefN0VH-e-qJPb97nMdJxJE9qz_-Vw8kA8%3D" title="Sign Up Today">Sign Up</a>
+			</div>
+
 			</div>
 		</section>
-
-		<div class="block--icon">
-			<figure class="block-icon"><img alt="Home Icon" ng-src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-home-0e0f6277cdce3d2e4b8a397de082aff8492ec1b9c1fd7875fe8406fb27c6172a.png" src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-home-0e0f6277cdce3d2e4b8a397de082aff8492ec1b9c1fd7875fe8406fb27c6172a.png"></figure>
-			<h2 class="t-gamma margin-bottom--2x">Additional Opportunites</h2>
-			<p class="t-base t-sans c-oil margin-bottom--2x">See more rental and ownership affordable housing opportunities.</p>
-			<a class="button large ghost-white" ui-sref="dahlia.additional-resources" href="/additional-resources">View Additional Housing Opportunities</a>
-		</div>
 	</div>
 
 	<div class="medium-4 columns padding-top box-shadow full-height bg-white small-no-padding">
@@ -55,7 +49,7 @@
 			<h4 class="h-caps-lined">Contact</h4>
 			<h3 class="t-base t-sans t-bold">San Francisco Office of Cannabis</h3>
 			<p><a href="mailto:sfhousing.info@sfgov.org">officeofcannabis@sfgov.org</a></p>
-			<p class="t-small t-steel">For registration questions, please contact Nicole Elliott.</p>
+			<p class="t-small t-steel">If you have questions on your pre-application, email us.</p>
 		</div>
 	</ng-include></div></section>
 

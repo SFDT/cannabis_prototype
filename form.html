@@ -5,27 +5,29 @@
 </head>
 <body><button class="button-link skip-link sr-only ng-binding" ng-click="focusOnMainContent()">Skip to main content</button><div class="site-container">
 
-<!-- uiView: version --><section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
+<!-- uiView: version -->
+<section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is NEW. <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform"><strong>Let us know what you think</strong></a>, so we can make it better.</p></div></div></div></section>
 
-<!-- uiView: navigation --><section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row">
-
-<ul class="title-area">
-
-<li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li>
-<li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li>
-</ul><section class="top-bar-section">
+<!-- uiView: navigation -->
+<section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="index.html">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul><section class="top-bar-section">
 
 <!-- ngInclude: 'shared/templates/nav/_nav_items.html' -->
 </section></div></nav></ng-include><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-mobile.html'" class="ng-scope"></ng-include></section><div bs-loading-overlay="" class="loading-overlay">
 
 
-<!-- uiView: container --><section class="main-content ng-scope" id="main-content" ui-view="container"><div class="dash-container tall ng-scope"><section class="row collapse"><div class="medium-10 medium-centered columns fixed-width"><!-- ngIf: rememberedShortFormState --><form class="dash-card ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-valid-minlength" id="form-wrapper" name="form.signIn" ng-submit="signIn()" novalidate="">
+<!-- uiView: container -->
+<section class="main-content ng-scope" id="main-content" ui-view="container"><div class="dash-container tall ng-scope"><section class="row collapse"><div class="medium-10 medium-centered columns fixed-width"><!-- ngIf: rememberedShortFormState --><form class="dash-card ng-pristine ng-valid-email ng-invalid ng-invalid-required ng-valid-minlength" id="form-wrapper" name="form.signIn" ng-submit="signIn()" novalidate="">
 
 <header class="dash-header">
-	<span class="header-badge"><span class="ui-icon ui-static ui-medium i-color"></span></span><h1 class="dash-title t-sans no-margin">Pre-Registration Form</h1></header>
+	<span class="header-badge"><span class="ui-icon ui-static ui-medium i-color"></span></span><h1 class="t-beta t-sans cap no-margin">Cannabis business registration</h1>
+	<div class="block--short">
+		<p class="t-base g-base c-steel text-left">To apply for a Temporary Licence to Operate a cannabis business, you need to register.</p>
+	</div>
+</header>
 
 <div class="dash-card-inner inset border-bottom"><div>
 <div class="form-group">
+
 <!-- uiView: Business Certificate -->
 <div class="row ">
 	<div class="form-header no-border">
@@ -43,8 +45,8 @@
 	</div>
 
 	<div class="large-12 columns">
-		<h3 class="form-label no-caps ng-binding">Business<span class="c-alert">*</span></h3>
-		<div class="t-small p-small c-steel">(name of the parent company or, if no parent company, owner’s last name, first name)</div>
+		<h3 class="form-label no-caps no-margin ng-binding">Business<span class="c-alert">*</span></h3>
+		<div class="t-small p-small padding-bottom--1x c-steel">(name of the parent company or, if no parent company, owner’s last name, first name)</div>
 		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
@@ -72,6 +74,15 @@
 		<h3 class="form-label no-caps ng-binding">Zip<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="" class="" />
 	</div>
+
+	<div class="large-12 columns margin-bottom--2x">
+		<h3 class="form-label no-caps no-margin ng-binding">Copy of your Business Registration Certificate</h3>
+		<p class="t-small p-small padding-bottom--1x c-steel">(Attach a scan or a photo from your smartphone)</p>
+		<div class="form-field">
+		<span class="label-dollar">Upload .gif, .pdf...</span>
+		<input type="file" name="address" placeholder="" class="" multiple/>
+		</div>
+	</div>
 </div>
 
 <!-- uiView: About Your Business -->
@@ -82,16 +93,6 @@
 <div class="form-business row">
 	
 	<div class="row">
-		<div class="large-12 columns">
-			<h3 class="form-label no-caps ng-binding">Parcel (Block/Lot)<span class="c-alert">*</span></h3>
-			<input type="text" name="name" placeholder="" class="" />
-		</div>
-
-		<div class="large-12 columns">
-			<h3 class="form-label no-caps ng-binding">Zoning Districts<span class="c-alert">*</span></h3>
-			<textarea name="" id="" cols="30" rows="10"></textarea>
-		</div>
-
 		<div class="large-6 columns">
 			<h3 class="form-label no-caps ng-binding">Contact Email<span class="c-alert">*</span></h3>
 			<input type="text" name="name" placeholder="Email Address" class="" />
@@ -105,58 +106,54 @@
 
 	<div class="row">
 		<div class="large-12 columns">
-			<h3 class="form-question form-label no-caps ng-binding">Proof of Operation Start Date</h3>
-			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date you started operating. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
+			<h3 class="form-question border-top form-label no-caps ng-binding">When your cannabis business started operating</h3>
 		</div>
-		<div class="large-4 columns margin-bottom--2x">
-			<h3 class="form-label no-caps ng-binding">Start Date</h3>
+		<div class="large-12 columns margin-bottom--1x">
+			<h3 class="form-label no-caps ng-binding">Date started operating</h3>
 			<input type="text" name="address" placeholder="mm/dd/yyyy" class="" />
 		</div>
 
-		<div class="large-8 columns margin-bottom--2x">
-			<h3 class="form-label no-caps ng-binding">Attachment</h3>
+		<div class="large-12 columns margin-bottom--1x">
+			<h3 class="form-label no-caps no-margin ng-binding">Proof of the date you started operating</h3>
+			<p class="t-small p-small padding-bottom--1x c-steel">(Attach scans or photos from a smartphone)</p>
 			<div class="form-field">
 			<span class="label-dollar">Upload .gif, .pdf...</span>
 			<input type="file" name="address" placeholder="" class="" multiple/>
 			</div>
+
+			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date your cannabis business started operating. You can include an invoices, transaction history, rent, utility bills and any other documents we can use to confirm you were in business on the date above. You can attach all that apply, as a scan or a photo from your smartphone.</div>	
 		</div>
+
 	</div>
 
 
 	<div class="row">
 		<div class="large-12 columns">
-			<h3 class="form-question border-top form-label no-caps ng-binding">Government Issued</h3>
-			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date you started operating. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
+			<h3 class="form-question border-top form-label no-caps ng-binding">Copies of all of permits, licences and registrations you hold for that address</h3>
+			<div class="checkbox margin-bottom--2x">
+				<input id="permit" type="checkbox" name="permit" />
+				<label for="permit">I don’t have any other permits, licences or registrations at this address</label>
+			</div>
 		</div>
-		<div class="large-4 columns">
-			<h3 class="form-label no-caps ng-binding">Issued Department</h3>
-			<input type="text" name="address" placeholder="" class="" />
+		<div class="large-12 columns">
+			<h3 class="form-label no-caps ng-binding">Type or name of permit, licence or registration</h3>
+			<input type="text" name="address" placeholder="Seller’s permit" class="" />
 		</div>
 
-		<div class="large-8 columns">
-			<h3 class="form-label no-caps ng-binding">Attachment</h3>
+		<div class="large-12 columns">
+			<h3 class="form-label no-caps no-margin ng-binding">Copy of the document</h3>
+			<p class="t-small p-small padding-bottom--1x c-steel">(Attach scans or photos from a smartphone)</p>
 			<div class="form-field">
 			<span class="label-dollar">Upload 1 file</span>
 			<input type="file" name="address" placeholder="" class=""/>
 			</div>
-		</div>
 
-		<div class="large-4 columns margin-bottom--1x">
-			<h3 class="form-label no-caps ng-binding">Issued Department</h3>
-			<input type="text" name="address" placeholder="" class="" />
-		</div>
-
-		<div class="large-8 columns margin-bottom--1x">
-			<h3 class="form-label no-caps ng-binding">Attachment</h3>
-			<div class="form-field">
-			<span class="label-dollar">Upload 1 file</span>
-			<input type="file" name="address" placeholder="" class=""/>
-			</div>
+			<div class="form-instruction t-tiny p-tiny c-steel">If you have any other permits, licences and registrations for your cannabis business, list and attach a copy of all of them, like your Seller’s Permit, Medical Cannabis Dispensary Program Permit or a Hazardous Materials Permit.</div>	
 		</div>
 	</div>
 
 	<div class="large-12 columns margin-bottom--2x">
-		<a>+ Add More Documents</a>
+		<a><span class="t-delta t-delta margin-right">+</span> Add More Documents</a>
 	</div>
 
 	<div class="row">
@@ -177,7 +174,7 @@
 		</div>
 
 		<div class="large-12 columns">
-			<h3 class="form-label no-caps ng-binding">Attachment</h3>
+			<h3 class="form-label no-caps ng-binding">Attach a copy</h3>
 			<div class="form-field">
 			<span class="label-dollar">Upload notarized letter</span>
 			<input type="file" name="address" placeholder="" class=""/>
@@ -186,6 +183,27 @@
 	</div>
 
 </div>
+
+<!-- uiView: About Your Business -->
+	<div class="form-header">
+		<h3 class="dash-title t-gamma t-sans">Zoning</h3>
+	</div>
+
+<div class="form-business row">
+	
+	<div class="row">
+		<div class="large-12 columns">
+			<h3 class="form-label no-caps no-margin ng-binding">Parcel (Block/Lot Number)<span class="c-alert">*</span></h3>
+			<div class="t-tiny p-tiny padding-bottom--1x c-steel">Et qui mollis sententiae, lorem ornatus interpretaris nec cu. Sed ei inani tation, splendide laboramus definitiones cum in.</div>	
+			<input type="text" name="name" placeholder="" class="" />
+		</div>
+
+		<div class="large-12 columns">
+			<h3 class="form-label no-caps no-margin ng-binding">Zoning Districts<span class="c-alert">*</span></h3>
+			<div class="t-tiny p-tiny padding-bottom--1x c-steel">Et qui mollis sententiae, lorem ornatus interpretaris nec cu. Sed ei inani tation, splendide laboramus definitiones cum in.</div>	
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</div>
+	</div>
 
 <!-- uiView: Permit Type -->
 <div class="form-type row">
@@ -221,6 +239,7 @@
 				</div>
 			</td>
 		</tr>
+
 		<tr>
 			<td scope="row">
 				Distribution
@@ -238,43 +257,10 @@
 				</div>
 			</td>
 		</tr>
+
 		<tr>
 			<td scope="row">
-				Manufacturing (level 1) <small><br>Not using solvents, or using only nonvolatile solvents</small>
-			</td>
-			<td>
-				<div class="checkbox">
-					<input type="checkbox" name="mfg1-med" id="mfg1-med" />
-					<label for="mfg1-med"></label>
-				</div>
-			</td>
-			<td>
-				<div class="checkbox">
-					<input type="checkbox" name="mfg1-adu" id="mfg1-adu" />
-					<label for="mfg1-adu"></label>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td scope="row">
-				Manufacturing (level 2) <small><br>Using volatile solvents</small>
-			</td>
-			<td>
-				<div class="checkbox">
-					<input type="checkbox" name="mfg2-med" id="mfg2-med" />
-					<label for="mfg2-med"></label>
-				</div>
-			</td>
-			<td>
-				<div class="checkbox">
-					<input type="checkbox" name="mfg2-adu" id="mfg2-adu" />
-					<label for="mfg2-adu"></label>
-				</div>
-			</td>
-		</tr>
-		<tr>
-			<td scope="row">
-				Microbusiness <small><br>Cannabis businesses that cultivate, distribute, manufacture and/or sell cannabis products with a premises of less than 10,000 square feet.</small>
+				Microbusiness <small><br>Cultivation, manufacturing, distribution and retail at one location</small>
 			</td>
 			<td>
 				<div class="checkbox">
@@ -289,9 +275,10 @@
 				</div>
 			</td>
 		</tr>
+
 		<tr>
 			<td scope="row">
-				Retail (storefront and other sales)
+				Retail (storefront)
 			</td>
 			<td>
 				<div class="checkbox">
@@ -306,9 +293,10 @@
 				</div>
 			</td>
 		</tr>
+
 		<tr>
 			<td scope="row">
-				Retail (non-storefront)
+				Retail (non-storefront, delivery only)
 			</td>
 			<td>
 				<div class="checkbox">
@@ -323,6 +311,43 @@
 				</div>
 			</td>
 		</tr>
+
+		<tr>
+			<td scope="row">
+				Manufacturing (level 1) <small><br>The business does not use solvents, or using only nonvolatile solvents</small>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mfg1-med" id="mfg1-med" />
+					<label for="mfg1-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mfg1-adu" id="mfg1-adu" />
+					<label for="mfg1-adu"></label>
+				</div>
+			</td>
+		</tr>
+
+		<tr>
+			<td scope="row">
+				Manufacturing (level 2) <small><br>The business uses volatile solvents</small>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mfg2-med" id="mfg2-med" />
+					<label for="mfg2-med"></label>
+				</div>
+			</td>
+			<td>
+				<div class="checkbox">
+					<input type="checkbox" name="mfg2-adu" id="mfg2-adu" />
+					<label for="mfg2-adu"></label>
+				</div>
+			</td>
+		</tr>
+	
 		<tr>
 			<td scope="row">
 				Testing Laboratory
@@ -334,6 +359,7 @@
 				</div>
 			</td>
 		</tr>
+
 	</tbody>
 </table>
 </div>
@@ -367,7 +393,14 @@
 	</div>
 </div>
 
-</form></div></section></div></section></div></div>
+</form>
+
+<div class="block--short">
+		<p class="border-top padding-top--2x t-base g-base c-steel text-left">Because of <a target="blank" title="San Francisco's Sunshine Ordinance" href="http://sfgov.org/sunshine/">San Francisco’s Sunshine Ordinance</a>, all records held by the City and County of San Francisco are public. This means that any information you submit can be requested by any member of the public.</p>
+	</div>
+
+
+</div></section></div></section></div></div>
 
 <div class="footer-section"><div bs-loading-overlay="" class="loading-overlay">
 
