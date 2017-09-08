@@ -7,21 +7,13 @@
 
 <div class="site-container">
 
-<!-- uiView: translate -->
-<section ui-view="translate" class="ng-scope"><div class="translate-bar bar bg-tuatara ng-scope"><div class="row"><div class="medium-12 columns"><ul class="inline-list no-margin t-small right"><li class="c-iron show-for-medium-up">Select Language</li><li><a class="c-white" ui-sref="dahlia.welcome-spanish" href="/welcome-spanish">Español</a></li><li><a class="c-white t-ch" ui-sref="dahlia.welcome-chinese" href="/welcome-chinese">中文<span class="sr-only">Chinese</span></a></li><li><a class="c-white" ui-sref="dahlia.welcome-filipino" href="/welcome-filipino">Filipino</a></li></ul></div></div></div></section>
-
-
 <!-- uiView: version -->
-<section ui-view="version" class="ng-scope"><div class="version-bar bar bg-primary ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We're offering even more! We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
+<section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
 
 <!-- uiView: navigation -->
-<section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="DAHLIA San Francisco Housing Portal" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul><section class="top-bar-section">
+<section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul><section class="top-bar-section">
 
 <!-- ngInclude: 'shared/templates/nav/_nav_items.html' -->
-<ul class="nav-menu right ng-scope" ng-include="'shared/templates/nav/_nav_items.html'">
-  <li class="ng-scope"><a ui-sref="dahlia.listings" href="/listings">Home</a></li>
-    <li class="ng-scope"><a ui-sref="dahlia.favorites" href="/favorites">Contact</a></li>
-</ul>
 </section></div></nav></ng-include><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-mobile.html'" class="ng-scope"></ng-include></section><div bs-loading-overlay="" class="loading-overlay">
 
 <!-- uiView: container --><section class="main-content ng-scope" id="main-content" ui-view="container">
@@ -61,9 +53,9 @@
 		<!-- ngInclude: --><ng-include src="'pages/templates/_contact-mayors-office.html'" class="ng-scope">
 		<div class="content-group no-border ng-scope">
 			<h4 class="h-caps-lined">Contact</h4>
-			<h3 class="t-base t-sans t-bold">Office of Cannabis</h3>
+			<h3 class="t-base t-sans t-bold">San Francisco Office of Cannabis</h3>
 			<p><a href="mailto:sfhousing.info@sfgov.org">officeofcannabis@sfgov.org</a></p>
-			<p class="t-small t-steel">For general questions, please contact Nicole.</p>
+			<p class="t-small t-steel">For registration questions, please contact Nicole Elliott.</p>
 		</div>
 	</ng-include></div></section>
 
@@ -73,15 +65,32 @@
 <div class="footer-section"><div bs-loading-overlay="" class="loading-overlay">
 
 <!-- uiView: footer -->
-<section ui-view="footer" class="ng-scope"><footer class="bg-tuatara padding-top--2x ng-scope"><div class="row text-center padding-bottom--2x"><div class="medium-12 columns"><img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../office-of-cannabis/images/logo-city.png"></div>
+<section ui-view="footer" class="ng-scope">
+	<footer class="bg-tuatara padding-top--2x ng-scope">
+		<div class="row text-center padding-bottom--2x">
+			<div class="medium-12 columns">
+				<img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../office-of-cannabis/images/logo-city.png">
+			</div>
+			<div class="medium-8 medium-centered columns">
+				<p class="c-iron"><a class="a-white" href="http://sf-moh.org">San Francisco Office of Cannabis</a></p>
+				<p class="t-small c-iron margin-top--1x">For registration questions, please email <a class="c-white" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a>.</p>
+			</div>
+		</div>
 
-	<div class="medium-8 medium-centered columns"><p class="c-iron"><a class="a-white" href="http://sf-moh.org">Office of Cannabis</a></p><p class="t-small c-iron margin-top--2x">For registration questions, please email <a class="c-white" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a>.</p></div></div><section class="footer-sock bg-ebony padding-top--2x padding-bottom"><div class="row"><div class="medium-3 large-4 columns small-only-text-center"><span class="c-aluminum">© City &amp; County of San Francisco</span></div><div class="medium-9 large-8 columns small-only-text-center"><ul class="inline-list">
-<li><a class="a-aluminum" href="https://docs.google.com/forms/d/1M6doffR5XMoXoxyaZgkhAjRpUZMidUVmwCsuCpQTn18/viewform">Give Feedback</a></li>
-<li><a class="a-aluminum" href="mailto:sfhousing.info@sfgov.org">Contact</a></li>
-<li><a class="a-aluminum" ui-sref="dahlia.disclaimer" href="/disclaimer">Disclaimer</a></li>
-</ul></div></div></section>
-
-</footer></section></div></div>
+		<section class="footer-sock bg-ebony padding-top--2x padding-bottom">
+			<div class="row">
+				<div class="medium-3 large-4 columns small-only-text-center">
+					<span class="c-aluminum">© City &amp; County of San Francisco</span></div><div class="medium-9 large-8 columns small-only-text-center">
+					<ul class="inline-list">
+						<li><a class="a-aluminum" href="https://docs.google.com/forms/d/1M6doffR5XMoXoxyaZgkhAjRpUZMidUVmwCsuCpQTn18/viewform">Give Feedback</a></li>
+						<li><a class="a-aluminum" href="disclaimer.html">Disclaimer</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</footer>
+</section>
+</div></div>
 
 </body>
 </html>

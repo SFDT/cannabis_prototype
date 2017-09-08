@@ -7,20 +7,13 @@
 
 <div class="site-container">
 
-<!-- uiView: translate --><section ui-view="translate" class="ng-scope"><div class="translate-bar bar bg-tuatara ng-scope"><div class="row"><div class="medium-12 columns"><ul class="inline-list no-margin t-small right"><li class="c-iron show-for-medium-up">Select Language</li><li><a class="c-white" ui-sref="dahlia.welcome-spanish" href="/welcome-spanish">Español</a></li><li><a class="c-white t-ch" ui-sref="dahlia.welcome-chinese" href="/welcome-chinese">中文<span class="sr-only">Chinese</span></a></li><li><a class="c-white" ui-sref="dahlia.welcome-filipino" href="/welcome-filipino">Filipino</a></li></ul></div></div></div></section>
-
-
-<!-- uiView: version --><section ui-view="version" class="ng-scope"><div class="version-bar bar bg-steel ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We're offering even more! We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
+<!-- uiView: version --><section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
 
 <!-- uiView: navigation --><section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul>
 
 <section class="top-bar-section">
 
 <!-- ngInclude: 'shared/templates/nav/_nav_items.html' -->
-<ul class="nav-menu right ng-scope" ng-include="'shared/templates/nav/_nav_items.html'">
-  <li class="ng-scope"><a ui-sref="dahlia.listings" href="/home">Home</a></li>
-    <li class="ng-scope"><a ui-sref="dahlia.favorites" href="/contact">Contact Us</a></li>
-</ul>
 </section></div></nav></ng-include><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-mobile.html'" class="ng-scope"></ng-include></section><div bs-loading-overlay="" class="loading-overlay">
 
 <!-- uiView: container --><section class="main-content ng-scope" id="main-content" ui-view="container"><section class="splash-header bg-image ng-scope"><div class="row"><header class="hero-header text-center"><h1 class="hero-title t-sans c-white ng-binding">Pre-registration Discovery Phase</h1><p class="hero-text t-epsilon g-epsilon c-white">If you have a cannabis business operating now, you need to pre-register to make sure you have all the permits you need to operate in 2018. We’ll work with businesses already operating legally to make sure they have a say in how cannabis is regulated in San Francisco.</p></header></div></section>
@@ -38,26 +31,26 @@
 		<img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../cannabis_prototype/images/logo-city.png">
 	</div>
 	<h2 class="h-caps-lined">you will need</h2>
-<section class="break-section-small"></section>
+<section class="break-section-tiny"></section>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
 			<span class="content-card_number">1</span>
-			<h4 class="content-card_title no-margin">Business registration certificate</h4>
+			<h4 class="content-card_title">Business registration certificate</h4>
 		</header>
 	</div>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
 			<span class="content-card_number">2</span>
-			<h4 class="content-card_title no-margin">Company name and address</h4>
+			<h4 class="content-card_title">Company name and address</h4>
 		</header>
 	</div>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
 			<span class="content-card_number">3</span>
-			<h4 class="content-card_title no-margin">SF business account number</h4>
+			<h4 class="content-card_title">SF business account number</h4>
 			<p class="c-steel"><a target="blank" href="http://sftreasurer.org/registration">View Link</a></p>
 		</header>
 	</div>
@@ -65,31 +58,36 @@
 	<div class="content-card">
 		<header class="content-card_ordered">
 			<span class="content-card_number">4</span>
-			<h4 class="content-card_title no-margin">The date you started operating</h4>
+			<h4 class="content-card_title">The date you started operating</h4>
 		</header>
 	</div>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
 			<span class="content-card_number">5</span>
-			<h4 class="content-card_title no-margin">Proof of when you started operating</h4>
+			<h4 class="content-card_title">Proof of when you started operating</h4>
 		</header>
 	</div>
 
 	<div class="content-card">
 		<header class="content-card_ordered">
 			<span class="content-card_number">6</span>
-			<h4 class="content-card_title no-margin">A copy of the deed or a notarized letter</h4>
+			<h4 class="content-card_title">A copy of the deed or a notarized letter</h4>
 			<p class="c-steel">From your landlord consenting to any cannabis business operations on their premises. (You can take a copy from a smartphone)</p>
 		</header>
 	</div>
 
-<section class="property-hero_action"></section>
-	<a class="button ghost-white" href="form.html" title="Sign Up Today">Pre-register Now</a>
-<section class="results-section"></section>
-<section class="results-section"></section>
+<section class="break-section-small"></section>
+	<a class="button primary" href="form.html" title="Sign Up Today">Pre-register Now</a>
+<section class="break-section-big"></section>
 
-	<div class="splash-message_panel row"><p class="t-large c-charcoal ng-binding">The City is pre-registering existing businesses to establish a new permitting process. The Board of Supervisors will be determining who will be eligible for permits this fall.</p><br><p class="t-large c-charcoal ng-binding">If you want to apply for permits for a new business, leave your email and we’ll let you know when we are accepting applications for permits for new cannabis businesses.</p></div>
+	<div class="splash-message_panel row"><p class="t-large c-charcoal ng-binding">The City is pre-registering existing businesses to establish a new permitting process. The Board of Supervisors will be determining who will be eligible for permits this fall.</p><br><p class="t-large c-charcoal ng-binding">If you want to apply for permits for a new business, leave your email and we’ll let you know when we are accepting applications for permits for new cannabis businesses.</p>
+		<section class="break-section-tiny"></section>
+		<div class="form-email">
+			<input type="email" placeholder="Email Address" class="" />
+		</div>
+	</div>
+
 
 
 </div></div></div>
@@ -98,13 +96,33 @@
 </section></section></section></div></div>
 <div class="footer-section"><div bs-loading-overlay="" class="loading-overlay">
 
-<!-- uiView: footer --><section ui-view="footer" class="ng-scope"><footer class="bg-tuatara padding-top--2x ng-scope"><div class="row text-center padding-bottom--2x"><div class="medium-12 columns"><img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../cannabis_prototype/images/logo-city.png"></div><div class="medium-8 medium-centered columns"><p class="c-iron"><a class="a-white" href="http://officeofcannabis.sfgov.org">San Francisco Office of Cannabis</a></p><p class="t-small c-iron margin-top--2x">For information, please email to <a class="a-aluminum" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a>.</p></div></div><section class="footer-sock bg-ebony padding-top--2x padding-bottom"><div class="row"><div class="medium-3 large-4 columns small-only-text-center"><span class="c-aluminum">© City &amp; County of San Francisco</span></div><div class="medium-9 large-8 columns small-only-text-center">
-<ul class="inline-list">
-	<li><a class="a-aluminum" href="https://docs.google.com/forms/d/1M6doffR5XMoXoxyaZgkhAjRpUZMidUVmwCsuCpQTn18/viewform">Give Feedback</a></li>
-	<li><a class="a-aluminum" href="mailto:officeofcannabis@sfgov.org">Contact</a></li>
-	<li><a class="a-aluminum" href="/disclaimer">Disclaimer</a></li>
-</ul>
-</div></div></section></footer></section></div></div>
+<!-- uiView: footer -->
+<section ui-view="footer" class="ng-scope">
+	<footer class="bg-tuatara padding-top--2x ng-scope">
+		<div class="row text-center padding-bottom--2x">
+			<div class="medium-12 columns">
+				<img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../office-of-cannabis/images/logo-city.png">
+			</div>
+			<div class="medium-8 medium-centered columns">
+				<p class="c-iron"><a class="a-white" href="http://sf-moh.org">San Francisco Office of Cannabis</a></p>
+				<p class="t-small c-iron margin-top--1x">For registration questions, please email <a class="c-white" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a>.</p>
+			</div>
+		</div>
+
+		<section class="footer-sock bg-ebony padding-top--2x padding-bottom">
+			<div class="row">
+				<div class="medium-3 large-4 columns small-only-text-center">
+					<span class="c-aluminum">© City &amp; County of San Francisco</span></div><div class="medium-9 large-8 columns small-only-text-center">
+					<ul class="inline-list">
+						<li><a class="a-aluminum" href="https://docs.google.com/forms/d/1M6doffR5XMoXoxyaZgkhAjRpUZMidUVmwCsuCpQTn18/viewform">Give Feedback</a></li>
+						<li><a class="a-aluminum" href="disclaimer.html">Disclaimer</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</footer>
+</section>
+</div></div>
 
 </body>
 </html>

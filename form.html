@@ -5,23 +5,17 @@
 </head>
 <body><button class="button-link skip-link sr-only ng-binding" ng-click="focusOnMainContent()">Skip to main content</button><div class="site-container">
 
-<!-- uiView: translate --><section ui-view="translate" class="ng-scope"><div class="translate-bar bar bg-tuatara ng-scope"><div class="row"><div class="medium-12 columns"><ul class="inline-list no-margin t-small right"><li class="c-iron show-for-medium-up">Select Language</li><li><a class="c-white" ui-sref="dahlia.welcome-spanish" href="/welcome-spanish">Español</a></li><li><a class="c-white t-ch" ui-sref="dahlia.welcome-chinese" href="/welcome-chinese">中文<span class="sr-only">Chinese</span></a></li><li><a class="c-white" ui-sref="dahlia.welcome-filipino" href="/welcome-filipino">Filipino</a></li></ul></div></div></div></section>
-
-<!-- uiView: version --><section ui-view="version" class="ng-scope"><div class="version-bar bar bg-steel ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We're offering even more! We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
+<!-- uiView: version --><section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is in <strong class="t-caps">beta</strong>. We'd love to get <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSfJQL6ewvzETV7ZkWot94CaVlI7XlGPbhny4w6mPmDqZS995Q/viewform">your feedback</a>.</p></div></div></div></section>
 
 <!-- uiView: navigation --><section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row">
 
 <ul class="title-area">
 
-<li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="DAHLIA San Francisco Housing Portal" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li>
+<li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="">San Francisco Office of Cannabis</a></h1></li>
 <li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li>
 </ul><section class="top-bar-section">
 
 <!-- ngInclude: 'shared/templates/nav/_nav_items.html' -->
-<ul class="nav-menu right ng-scope" ng-include="'shared/templates/nav/_nav_items.html'">
-	<li class="ng-scope"><a ui-sref="dahlia.listings" href="/listings">Home</a></li>
-	<li class="ng-scope"><a ui-sref="dahlia.favorites" href="/favorites">Contact Us</a></li>
-</ul>
 </section></div></nav></ng-include><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-mobile.html'" class="ng-scope"></ng-include></section><div bs-loading-overlay="" class="loading-overlay">
 
 
@@ -40,7 +34,7 @@
 
 	<div class="large-12 columns">
 		<h3 class="form-label no-caps ng-binding">Business Account Number<span class="c-alert">*</span></h3>
-		<input type="text" name="name" placeholder="xxxxxxx" class="" />
+		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
 	<div class="large-12 columns">
@@ -56,12 +50,12 @@
 
 	<div class="large-12 columns">
 		<h3 class="form-label no-caps ng-binding">Location ID<span class="c-alert">*</span></h3>
-		<input type="text" name="name" placeholder="xxxxxxx-xx-xxx" class="" />
+		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
 	<div class="large-5 columns">
 		<h3 class="form-label no-caps ng-binding">Business Location<span class="c-alert">*</span></h3>
-		<input type="text" name="name" placeholder="Street Number, Street Name" class="" />
+		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
 	<div class="large-3 columns">
@@ -78,26 +72,6 @@
 		<h3 class="form-label no-caps ng-binding">Zip<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="" class="" />
 	</div>
-
-	<div class="large-6 columns">
-		<h3 class="form-label no-caps ng-binding">Parcel (Block/Lot)<span class="c-alert">*</span></h3>
-		<input type="text" name="name" placeholder="" class="" />
-	</div>
-
-	<div class="large-6 columns">
-		<h3 class="form-label no-caps ng-binding">Zoning Districts<span class="c-alert">*</span></h3>
-		<input type="text" name="name" placeholder="" class="" />
-	</div>
-
-	<div class="large-6 columns">
-		<h3 class="form-label no-caps ng-binding">Contact Email<span class="c-alert">*</span></h3>
-		<input type="text" name="name" placeholder="name@email.com" class="" />
-	</div>
-
-	<div class="large-6 columns">
-		<h3 class="form-label no-caps ng-binding">Phone</h3>
-		<input type="text" name="name" placeholder="(555) 555-5555" class="" />
-	</div>
 </div>
 
 <!-- uiView: About Your Business -->
@@ -107,27 +81,49 @@
 
 <div class="form-business row">
 	
-	<div class="form-attach row">
+	<div class="row">
+		<div class="large-12 columns">
+			<h3 class="form-label no-caps ng-binding">Parcel (Block/Lot)<span class="c-alert">*</span></h3>
+			<input type="text" name="name" placeholder="" class="" />
+		</div>
+
+		<div class="large-12 columns">
+			<h3 class="form-label no-caps ng-binding">Zoning Districts<span class="c-alert">*</span></h3>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</div>
+
+		<div class="large-6 columns">
+			<h3 class="form-label no-caps ng-binding">Contact Email<span class="c-alert">*</span></h3>
+			<input type="text" name="name" placeholder="Email Address" class="" />
+		</div>
+
+		<div class="large-6 columns">
+			<h3 class="form-label no-caps ng-binding">Phone</h3>
+			<input type="text" name="name" placeholder="(555) 555-5555" class="" />
+		</div>
+	</div>
+
+	<div class="row">
 		<div class="large-12 columns">
 			<h3 class="form-question form-label no-caps ng-binding">Proof of Operation Start Date</h3>
 			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date you started operating. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
 		</div>
-		<div class="large-4 columns">
+		<div class="large-4 columns margin-bottom--2x">
 			<h3 class="form-label no-caps ng-binding">Start Date</h3>
 			<input type="text" name="address" placeholder="mm/dd/yyyy" class="" />
 		</div>
 
-		<div class="large-8 columns">
+		<div class="large-8 columns margin-bottom--2x">
 			<h3 class="form-label no-caps ng-binding">Attachment</h3>
 			<div class="form-field">
-			<span class="label-dollar">Attach .gif, .pdf...</span>
+			<span class="label-dollar">Upload .gif, .pdf...</span>
 			<input type="file" name="address" placeholder="" class="" multiple/>
 			</div>
 		</div>
 	</div>
 
 
-	<div class="form-attach row">
+	<div class="row">
 		<div class="large-12 columns">
 			<h3 class="form-question border-top form-label no-caps ng-binding">Government Issued</h3>
 			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date you started operating. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
@@ -140,33 +136,51 @@
 		<div class="large-8 columns">
 			<h3 class="form-label no-caps ng-binding">Attachment</h3>
 			<div class="form-field">
-			<span class="label-dollar">Attach .gif, .pdf...</span>
-			<input type="file" name="address" placeholder="" class="" multiple/>
+			<span class="label-dollar">Upload 1 file</span>
+			<input type="file" name="address" placeholder="" class=""/>
+			</div>
+		</div>
+
+		<div class="large-4 columns margin-bottom--1x">
+			<h3 class="form-label no-caps ng-binding">Issued Department</h3>
+			<input type="text" name="address" placeholder="" class="" />
+		</div>
+
+		<div class="large-8 columns margin-bottom--1x">
+			<h3 class="form-label no-caps ng-binding">Attachment</h3>
+			<div class="form-field">
+			<span class="label-dollar">Upload 1 file</span>
+			<input type="file" name="address" placeholder="" class=""/>
 			</div>
 		</div>
 	</div>
 
-	<div class="form-attach row">
+	<div class="large-12 columns margin-bottom--2x">
+		<a>+ Add More Documents</a>
+	</div>
+
+	<div class="row">
 		<div class="large-12 columns">
 			<h3 class="form-question border-top form-label no-caps ng-binding">Do you own or lease your business premises?</h3>
 			<div class="radio-group-inline ">
 				<p class="radio-inline">
-					<input type="radio" name="income" value="income-month" id="income-month">
-					<label class="radio-inline_label" for="income-month">Own</label>
+					<input type="radio" name="ownership" value="income-month" id="own">
+					<label class="radio-inline_label" for="own">Own</label>
 				</p>
 				<p class="radio-inline">
-					<input type="radio" name="income" value="income-year" id="income-year">
-					<label class="radio-inline_label" for="income-year">Lease</label>
+					<input type="radio" name="ownership" value="income-year" id="lease">
+					<label class="radio-inline_label" for="lease">Lease</label>
 				</p>
 			</div>
-			<div class="form-instruction t-tiny p-tiny c-steel">We need proof of the date you started operating. You can attach a photo of an invoice, transaction history, rent, utility bill or another document we can use to confirm you were in business on the date you gave us. (You can attach a scan or a photo from your smartphone)</div>
+			<div class="form-info-card t-tiny p-tiny c-steel"><p><strong>[If own - ]</strong> You need to submit a copy of the deed. (You can attach a scan or a photo from your smartphone)</p></div>
+			<div class="form-info-card t-tiny p-tiny c-steel"><p><strong>[If lease - ]</strong> You need to attach a notarized letter from your landlord consenting to any cannabis business operations on the premises. (You can attach a scan or a photo from your smartphone)</p></div>
 		</div>
 
 		<div class="large-12 columns">
 			<h3 class="form-label no-caps ng-binding">Attachment</h3>
 			<div class="form-field">
-			<span class="label-dollar">Attach .gif, .pdf...</span>
-			<input type="file" name="address" placeholder="" class="" multiple/>
+			<span class="label-dollar">Upload notarized letter</span>
+			<input type="file" name="address" placeholder="" class=""/>
 			</div>
 		</div>
 	</div>
@@ -179,7 +193,7 @@
 		<h3 class="dash-title t-gamma t-sans">Permit Type</h3>
 	</div>
 
-	<div class="form-space large-12 columns">
+	<div class="large-12 column margin-bottom--2x">
 		<h3 class="form-question form-label row ng-binding">In 2018, what permit type(s) do you intend to apply for at this address? Check all that apply:</h3>
 <table role="grid">
 	<thead>
@@ -325,7 +339,7 @@
 </div>
 
 <div class="large-12 columns">
-		<h3 class="form-label ng-binding">Do you have another cannabis business premises?</h3>
+		<h3 class="form-label form-question ng-binding">Do you have another cannabis business premises?</h3>
 			<div class="radio-group-inline">
 			<p class="radio-inline">
 				<input type="radio" name="biz-1" id="biz-1">
@@ -356,10 +370,34 @@
 </form></div></section></div></section></div></div>
 
 <div class="footer-section"><div bs-loading-overlay="" class="loading-overlay">
-<!-- uiView: footer --><section ui-view="footer" class="ng-scope"><footer class="bg-tuatara padding-top--2x ng-scope"><div class="row text-center padding-bottom--2x"><div class="medium-12 columns"><img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../cannabis_prototype/images/logo-city.png"></div><div class="medium-8 medium-centered columns"><p class="c-iron"><a class="a-white" href="http://officeofcannabis.sfgov.org">San Francisco Office of Cannabis</a></p><p class="t-small c-iron margin-top--2x">For information, you may email to <a class="a-aluminum" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a>.</p></div></div><section class="footer-sock bg-ebony padding-top--2x padding-bottom"><div class="row"><div class="medium-3 large-4 columns small-only-text-center"><span class="c-aluminum">© City &amp; County of San Francisco</span></div><div class="medium-9 large-8 columns small-only-text-center">
-<ul class="inline-list">
-	<li><a class="a-aluminum" href="https://docs.google.com/forms/d/1M6doffR5XMoXoxyaZgkhAjRpUZMidUVmwCsuCpQTn18/viewform">Give Feedback</a></li>
-	<li><a class="a-aluminum" href="mailto:officeofcannabis@sfgov.org">Contact</a></li>
-</ul>
-</div></div></section></footer></section></div></div>
-</body></html>
+
+<!-- uiView: footer -->
+<section ui-view="footer" class="ng-scope">
+	<footer class="bg-tuatara padding-top--2x ng-scope">
+		<div class="row text-center padding-bottom--2x">
+			<div class="medium-12 columns">
+				<img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../office-of-cannabis/images/logo-city.png">
+			</div>
+			<div class="medium-8 medium-centered columns">
+				<p class="c-iron"><a class="a-white" href="http://sf-moh.org">San Francisco Office of Cannabis</a></p>
+				<p class="t-small c-iron margin-top--1x">For registration questions, please email <a class="c-white" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a>.</p>
+			</div>
+		</div>
+
+		<section class="footer-sock bg-ebony padding-top--2x padding-bottom">
+			<div class="row">
+				<div class="medium-3 large-4 columns small-only-text-center">
+					<span class="c-aluminum">© City &amp; County of San Francisco</span></div><div class="medium-9 large-8 columns small-only-text-center">
+					<ul class="inline-list">
+						<li><a class="a-aluminum" href="https://docs.google.com/forms/d/1M6doffR5XMoXoxyaZgkhAjRpUZMidUVmwCsuCpQTn18/viewform">Give Feedback</a></li>
+						<li><a class="a-aluminum" href="disclaimer.html">Disclaimer</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</footer>
+</section>
+</div></div>
+
+</body>
+</html>
