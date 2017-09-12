@@ -30,82 +30,35 @@
 <div class="form-group">
 
 <!-- uiView: Business Certificate -->
-<div class="row">
-	<div class="large-12 medium-centered columns bg-dust">
-		<div class="block large-8 medium-centered columns form-email">
-				<h3 class="form-label text-left no-caps ng-binding">Business Account Number<span class="c-alert">*</span></h3>
-				<input type="email" placeholder="BAN #" class="" />
-
-				<a class="button small primary" href="http://visitor.r20.constantcontact.com/manage/optin?v=001-rR5XWQW7dMuyJHtE1VRCKsbO11jmYRO8H1uzzSs3-D1IpgLqynO4XfpWqC1VNsQH18uAmSg3KefN0VH-e-qJPb97nMdJxJE9qz_-Vw8kA8%3D" title="Sign Up Today">Look up from DataSF</a>
-		</div>	
-	</div>
-</div>
-
-
 <div class="large-12 row ">
 	<div class="form-header no-border">
-		<h3 class="dash-title columns text-left t-gamma t-sans">Information from DataSF</h3>
-
-	<div class="margin-bottom--2x row">
-	<h3 class="form-question form-label c-charcoal ng-binding">Choose one business address:</h3>
-	<div class="radio">
-		<input type="radio" name="groupName" id="radio1" />
-		<label for="radio1">Address 1 (Location ID)</label>
-	</div>
-
-	<div class="radio">
-		<input type="radio" name="groupName" id="radio2" />
-		<label for="radio2">Address 2 (Location ID)</label>
-	</div>
-
-	<div class="radio">
-		<input type="radio" name="groupName" id="radio3" />
-		<label for="radio3">Address 3 (Location ID)</label>
-	</div>
-
-	<div class="radio">
-		<input type="radio" name="groupName" id="radio4" />
-		<label for="radio4">Address 4 (Location ID)</label>
-	</div>
-
-	<div class="radio">
-		<input type="radio" name="groupName" id="radio5" />
-		<label for="radio5">Address 5 (Location ID)</label>
-	</div>
-	</div>
-	</div>
-
-	
-
-	<div class="large-6 columns">
-		<h3 class="form-label no-caps ng-binding">Business Account Number</h3>
-		<input type="text" name="name" value="00005495" class="" />
-	</div>
-
-	<div class="large-6 columns margin-bottom--1x">
-		<h3 class="form-label no-caps ng-binding">Date started operating</h3>
-		<input type="text" name="address" value="11/09/1985" class="" />
+		<h3 class="dash-title columns margin-bottom--2x text-left t-gamma t-sans">Information from Business Registration Certificate</h3>
 	</div>
 
 	<div class="large-12 columns">
-		<h3 class="form-label no-caps ng-binding">Trade Name (DBA)</h3>
-		<input type="text" name="name" value="SPARC" class="" />
+		<h3 class="form-label no-caps ng-binding">Business Account Number<span class="c-alert">*</span></h3>
+		<input type="text" name="name" placeholder="" class="" />
+	</div>
+
+	<div class="large-12 columns">
+		<h3 class="form-label no-caps ng-binding">Trade Name (DBA)<span class="c-alert">*</span></h3>
+		<input type="text" name="name" placeholder="" class="" />
 	</div>
  
 	<div class="large-12 columns">
-		<h3 class="form-label no-caps no-margin ng-binding">Business</h3>
+		<h3 class="form-label no-caps no-margin ng-binding">Business<span class="c-alert">*</span></h3>
 		<div class="t-small p-small padding-bottom--1x c-steel">(name of the parent company or, if no parent company, owner’s last name, first name)</div>
-		<input type="text" name="name" value="SPARC" class="" />
+		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
 	<div class="large-12 columns">
-		<h3 class="form-label no-caps ng-binding">Location ID (LIN)</h3>
-		<input type="text" name="name" value="0004710-01-999" class="" />
+		<h3 class="form-label no-caps ng-binding">Location ID (LIN)<span class="c-alert">*</span></h3>
+		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
 	<div class="large-5 columns">
-		<h3 class="form-label no-caps ng-binding">Business Location</h3>
-		<input type="text" name="name" value="1256 Mission St," class="" />
+		<h3 class="form-label no-caps ng-binding">Business Location<span class="c-alert">*</span></h3>
+		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
 	<div class="large-3 columns">
@@ -119,44 +72,46 @@
 	</div>
 
 	<div class="large-2 columns">
-		<h3 class="form-label no-caps ng-binding">Zip</h3>
-		<input type="text" name="name" value="94103" class="" />
-	</div>
-
-	<div class="large-12 columns">
-		<ul class="accordion" data-accordion>
-			<li class="accordion-navigation">
-				<a><span class="t-delta t-delta margin-right">+</span> Let us know if the information from DataSF is wrong</a>
-				<div id="panel1a" class="content active">
-					<label for="textInput" class="">Tell us what is wrong</label>
-					<textarea name="" id="" cols="30" rows="10"></textarea>
-				</div>
-			</li>
-		</ul>
+		<h3 class="form-label no-caps ng-binding">Zip<span class="c-alert">*</span></h3>
+		<input type="text" name="name" placeholder="" class="" />
 	</div>
 </div>
 
 <!-- uiView: About Your Business -->
-	<div class="form-header">
-		<h3 class="dash-title text-left columns t-gamma t-sans">About Your Business</h3>
-	</div>
+<div class="form-header">
+	<h3 class="dash-title text-left margin-bottom--2x columns t-gamma t-sans">About Your Business</h3>
+</div>
 
 <div class="form-business row">
-	
-		<div class="large-6 columns">
+		<div class="large-6 margin-bottom--1x columns">
 			<h3 class="form-label no-caps ng-binding">Contact Email<span class="c-alert">*</span></h3>
 			<input type="text" name="name" placeholder="Email Address" class="" />
 		</div>
 
-		<div class="large-6 columns">
+		<div class="large-6 margin-bottom--1x columns">
 			<h3 class="form-label no-caps ng-binding">Phone</h3>
 			<input type="text" name="name" placeholder="(555) 555-5555" class="" />
 		</div>
 
-
-	<div class="row">
 		<div class="large-12 columns">
-			<h3 class="form-question form-label no-caps ng-binding">Copies of all of permits, licences and registrations you hold for that address</h3>
+			<h3 class="form-question form-label padding-top--2x border-top no-caps ng-binding">When your cannabis business started operating</h3>
+			<h3 class="form-label no-caps ng-binding">Date started operating</h3>
+			<input type="text" name="address" placeholder="mm/dd/yyyy" class="" />
+		</div>
+
+		<div class="large-12 columns">
+			<h3 class="form-label no-caps no-margin ng-binding">Proof of the date you started operating</h3>
+			<p class="t-small p-small padding-bottom--1x c-steel">(Attach scans or photos from a smartphone)</p>
+			<div class="form-field">
+			<span class="label-dollar">Upload 1 file</span>
+			<input type="file" name="address" placeholder="" class=""/>
+			</div>
+
+			<div class="t-tiny p-tiny margin-bottom--3x c-steel">Please submit proof of the date your cannabis business started operating. You can include invoices, transaction history, rent, utility bills and any other documents we can use to confirm you were in business on the date above. You can attach all that apply, as a scan or a photo from your smartphone.</div>		
+		</div>
+
+		<div class="large-12 columns">
+			<h3 class="form-question form-label padding-top--2x border-top no-caps ng-binding">Copies of all of permits, licences and registrations you hold for that address</h3>
 			<div class="checkbox margin-bottom--2x">
 				<input id="permit" type="checkbox" name="permit" />
 				<label for="permit">I don’t have any other permits, licences or registrations at this address</label>
@@ -175,17 +130,17 @@
 			<input type="file" name="address" placeholder="" class=""/>
 			</div>
 
-			<div class="t-tiny p-tiny c-steel">If you have any other permits, licences and registrations for your cannabis business, list and attach a copy of all of them, like your Seller’s Permit, Medical Cannabis Dispensary Program Permit or a Hazardous Materials Permit.</div>	
+			<div class="t-tiny p-tiny margin-bottom--2x c-steel">If you have any other permits, licences and registrations for your cannabis business, list and attach a copy of all of them, like your Seller’s Permit, Medical Cannabis Dispensary Program Permit or a Hazardous Materials Permit.</div>	
 		</div>
-	</div>
 
-	<div class="large-12 columns margin-bottom--2x">
+
+	<div class="large-12 columns margin-bottom--3x">
 		<a><span class="t-delta t-delta margin-right">+</span> Add More Documents</a>
 	</div>
 
 	<div class="row">
 		<div class="large-12 columns">
-			<h3 class="form-question border-top form-label no-caps ng-binding">Do you own or lease your business premises?</h3>
+			<h3 class="form-question border-top padding-top--2x form-label no-caps ng-binding">Do you own or lease your business premises?</h3>
 			<div class="radio-group-inline ">
 				<p class="radio-inline">
 					<input type="radio" name="ownership" value="income-month" id="own">
@@ -220,7 +175,7 @@
 <div class="form-business row">
 	<div class="row">
 		<div class="large-12 columns">
-			<h3 class="form-label no-caps no-margin ng-binding">Parcel (Block/Lot Number)<span class="c-alert">*</span></h3>
+			<h3 class="form-label padding-top--2x no-caps no-margin ng-binding">Parcel (Block/Lot Number)<span class="c-alert">*</span></h3>
 			<div class="t-tiny p-tiny padding-bottom--1x c-steel">Find this number on the Property tab on <a target="blank" href="http://propertymap.sfplanning.org/">http://propertymap.sfplanning.org/</a></div>	
 			<input type="text" name="name" placeholder="" class="" />
 		</div>
@@ -391,25 +346,26 @@
 </table>
 </div></div>
 
-	<div class="large-12 columns">
+	<div class="large-12 margin-bottom--2x columns">
 		<h3 class="form-label form-question ng-binding">Do you have cannabis businesses at other locations in San Francisco?</h3>
 		<div class="radio-group-inline">
-			<p class="radio-inline">
-				<input type="radio" name="biz-1" id="biz-1">
-				<label class="radio-inline_label" for="biz-1">Yes</label>
-			</p>
-			<p class="radio-inline">
-				<input type="radio" name="biz-2" id="biz-2">
-				<label class="radio-inline_label" for="biz-2">No</label>
-			</p>
+		<div class="radio-inline">
+			<input type="radio" name="other-location" id="yes-other-location" />
+			<label for="yes-other-location">Yes</label>
+		</div>
+
+		<div class="radio-inline">
+			<input type="radio" name="other-location" id="no-other-location" />
+			<label for="no-other-location">No</label>
+		</div>
 		</div>
 	</div>
 
-</div></div></div>
+</div></div>
 
 
 <div class="form-submit">
-<div class="button-pager">
+	<div class="button-pager">
 		<div class="button-pager_row primary">
 			<button class="button primary">Submit</button>
 		</div>
@@ -421,12 +377,12 @@
 
 </form>
 
-	<div class="checkbox margin-top--2x margin-bottom--2x">
+	<div class="checkbox border-top margin-top--2x padding-top--2x margin-bottom--2x">
 		<input id="fee" type="checkbox" name="fee" />
 		<label class="text-left" for="fee">I acknowledge that I may be obligated to pay any application and/or inspection fees that may be imposed in connection with the application for a temporary Cannabis Business permit at the time I apply for my permanent business Permit to Operate.</label>
 	</div>
 
-	<p class="t-small g-small border-top margin-top--2x margin-bottom--2x padding-top--2x t-base g-base c-steel text-left">Under Article 67 of the San Francisco Administrative Code (called the Sunshine Ordinance), all records held by the City and County of San Francisco may become public. This means information you submit may be requested by any member of the public and could be subject to Sunshine Ordinance disclosure requirements.</p>
+	<p class="t-small g-small margin-bottom--2x t-base g-base c-steel text-left">Under Article 67 of the San Francisco Administrative Code (called the Sunshine Ordinance), all records held by the City and County of San Francisco may become public. This means information you submit may be requested by any member of the public and could be subject to Sunshine Ordinance disclosure requirements.</p>
 
 
 </div></section></div></section></div></div>
