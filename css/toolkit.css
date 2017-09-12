@@ -5508,6 +5508,9 @@ hr.tall {
 .no-padding {
   padding: 0 !important; }
 
+  .no-padding-bottom {
+  padding-bottom: 0 !important; }
+
 @media only screen and (max-width: 48em) {
   .small-no-padding {
     padding: 0 !important; } }
@@ -7032,12 +7035,20 @@ label {
 
    .form-label.no-caps, form label.no-caps, .form-group label.no-caps,
   .form-item label.no-caps {
-    text-transform: capitalize;
+    text-transform: inherit;
     letter-spacing: .1rem; } 
 
 .block.large-8.medium-centered.columns.form-email {
   padding-top: 2rem !important;
   padding-bottom: 2rem !important;
+}
+
+.intro-text ul li {
+  line-height: 1.375;
+    list-style-type: initial;
+    margin-left: 3rem;
+    padding-left: .25rem;
+    padding-bottom: 1.5rem;
 }
 
 .form-header {
@@ -11197,7 +11208,7 @@ body.body-block {
 
 .hero-title {
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 1.2;
 }
 @media only screen and (max-width: 48em) {

@@ -26,21 +26,22 @@
 	</div>
 </header>
 
-<div class="dash-card-inner inset border-bottom"><div>
+<div class="dash-card-inner inset"><div>
 <div class="form-group">
 
 <!-- uiView: Business Certificate -->
 <div class="large-12 row ">
 	<div class="form-header no-border">
-		<h3 class="dash-title columns margin-bottom--2x text-left t-gamma t-sans">Information from Business Registration Certificate</h3>
+		<h3 class="dash-title text-left columns t-gamma t-sans">Information from Business Registration Certificate</h3>
+		<p class="t-base g-base margin-bottom--2x no-caps columns text-left c-charcoal">You must have a business registered before September 15, 2017.</p>
 	</div>
 
-	<div class="large-12 columns">
+	<div class="large-5 columns">
 		<h3 class="form-label no-caps ng-binding">Business Account Number<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
-	<div class="large-12 columns">
+	<div class="large-7 columns">
 		<h3 class="form-label no-caps ng-binding">Trade Name (DBA)<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="" class="" />
 	</div>
@@ -57,7 +58,7 @@
 	</div>
 
 	<div class="large-5 columns">
-		<h3 class="form-label no-caps ng-binding">Business Location<span class="c-alert">*</span></h3>
+		<h3 class="form-label no-caps ng-binding">Business location<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="" class="" />
 	</div>
 
@@ -74,6 +75,15 @@
 	<div class="large-2 columns">
 		<h3 class="form-label no-caps ng-binding">Zip<span class="c-alert">*</span></h3>
 		<input type="text" name="name" placeholder="" class="" />
+	</div>
+
+	<div class="large-12 columns">
+		<h3 class="form-label no-caps no-margin ng-binding">Copy of your Business Registration Certificate<span class="c-alert">*</span></h3>
+		<p class="t-small p-small padding-bottom--1x c-steel">(Attach scans or photos from a smartphone)</p>
+		<div class="form-field">
+			<span class="label-dollar">Upload 1 file</span>
+			<input type="file" name="address" placeholder="" class=""/>
+		</div>	
 	</div>
 </div>
 
@@ -94,8 +104,8 @@
 		</div>
 
 		<div class="large-12 columns">
-			<h3 class="form-question form-label padding-top--2x border-top no-caps ng-binding">When your cannabis business started operating</h3>
-			<h3 class="form-label no-caps ng-binding">Date started operating</h3>
+			<h3 class="form-question form-label padding-top--2x border-top no-caps ng-binding">When did your cannabis business start operating in this location?</h3>
+			<h3 class="form-label no-caps ng-binding">Date you started operating</h3>
 			<input type="text" name="address" placeholder="mm/dd/yyyy" class="" />
 		</div>
 
@@ -107,17 +117,24 @@
 			<input type="file" name="address" placeholder="" class=""/>
 			</div>
 
-			<div class="t-tiny p-tiny margin-bottom--3x c-steel">Please submit proof of the date your cannabis business started operating. You can include invoices, transaction history, rent, utility bills and any other documents we can use to confirm you were in business on the date above. You can attach all that apply, as a scan or a photo from your smartphone.</div>		
+			<div class="t-tiny p-tiny margin-bottom--3x c-steel">We need proof of the date your cannabis business started operating. You can include invoices, transaction history, rent, utility bills and any other documents we can use to confirm you were in business on the date above. You can attach all that apply, as a scan or a photo from your smartphone.</div>		
 		</div>
 
 		<div class="large-12 columns">
-			<h3 class="form-question form-label padding-top--2x border-top no-caps ng-binding">Copies of all of permits, licences and registrations you hold for that address</h3>
-			<div class="checkbox margin-bottom--2x">
-				<input id="permit" type="checkbox" name="permit" />
-				<label for="permit">I don’t have any other permits, licences or registrations at this address</label>
+			<h3 class="form-question form-label padding-top--2x border-top no-caps ng-binding">Do you have any permits, licences or registrations for this address?</h3>
+			<div class="radio-group-inline ">
+				<p class="radio-inline">
+					<input type="radio" name="permits" value="permits-yes" id="yes">
+					<label class="radio-inline_label" for="yes">Yes</label>
+				</p>
+				<p class="radio-inline">
+					<input type="radio" name="permits" value="permits-no" id="no">
+					<label class="radio-inline_label" for="no">No</label>
+				</p>
 			</div>
+			<div class="t-small p-small no-margin padding-bottom--2x c-steel">If you have permits, licences or registrations for your cannabis business, like your Seller’s Permit, Medical Cannabis Dispensary Program Permit or a Hazardous Materials Permit, it will be faster for us to book your inspections.</div>
 		</div>
-		<div class="large-12 columns">
+		<div class="large-12 margin-top--1x columns">
 			<h3 class="form-label no-caps ng-binding">Type or name of permit, licence or registration</h3>
 			<input type="text" name="address" placeholder="Seller’s permit" class="" />
 		</div>
@@ -129,8 +146,6 @@
 			<span class="label-dollar">Upload 1 file</span>
 			<input type="file" name="address" placeholder="" class=""/>
 			</div>
-
-			<div class="t-tiny p-tiny margin-bottom--2x c-steel">If you have any other permits, licences and registrations for your cannabis business, list and attach a copy of all of them, like your Seller’s Permit, Medical Cannabis Dispensary Program Permit or a Hazardous Materials Permit.</div>	
 		</div>
 
 
@@ -175,14 +190,14 @@
 <div class="form-business row">
 	<div class="row">
 		<div class="large-12 columns">
-			<h3 class="form-label padding-top--2x no-caps no-margin ng-binding">Parcel (Block/Lot Number)<span class="c-alert">*</span></h3>
-			<div class="t-tiny p-tiny padding-bottom--1x c-steel">Find this number on the Property tab on <a target="blank" href="http://propertymap.sfplanning.org/">http://propertymap.sfplanning.org/</a></div>	
+			<h3 class="form-label padding-top--2x no-caps no-margin ng-binding">Parcel (Block/Lot)<span class="c-alert">*</span></h3>
+			<div class="t-tiny p-tiny padding-bottom--1x c-steel">Find this number on the Property tab in Step 2 on <a target="blank" href="http://propertymap.sfplanning.org/">http://propertymap.sfplanning.org/</a></div>	
 			<input type="text" name="name" placeholder="" class="" />
 		</div>
 
 		<div class="large-12 columns">
-			<h3 class="form-label no-caps no-margin ng-binding">Zoning Districts<span class="c-alert">*</span></h3>
-			<div class="t-tiny p-tiny padding-bottom--1x c-steel">Find this number on the Zoning tab on <a target="blank" href="http://propertymap.sfplanning.org/">http://propertymap.sfplanning.org/</a></div>	
+			<h3 class="form-label no-caps no-margin ng-binding">Zoning districts<span class="c-alert">*</span></h3>
+			<div class="t-tiny p-tiny padding-bottom--1x c-steel">Find this number on the Zoning tab in Step 2 on <a target="blank" href="http://propertymap.sfplanning.org/">http://propertymap.sfplanning.org/</a></div>	
 			<textarea name="" id="" cols="30" rows="5"></textarea>
 		</div>
 	</div>
@@ -346,6 +361,11 @@
 </table>
 </div></div>
 
+	<div class="checkbox margin-bottom--2x">
+		<input id="fee" type="checkbox" name="fee" />
+		<label class="text-left" for="fee">I understand that I will need to pay fees for the temporary permit and inspection. These fees will be due when I apply for my permanent Permit to Operate.</label>
+	</div>
+
 	<div class="large-12 margin-bottom--2x columns">
 		<h3 class="form-label form-question ng-binding">Do you have cannabis businesses at other locations in San Francisco?</h3>
 		<div class="radio-group-inline">
@@ -377,12 +397,7 @@
 
 </form>
 
-	<div class="checkbox border-top margin-top--2x padding-top--2x margin-bottom--2x">
-		<input id="fee" type="checkbox" name="fee" />
-		<label class="text-left" for="fee">I acknowledge that I may be obligated to pay any application and/or inspection fees that may be imposed in connection with the application for a temporary Cannabis Business permit at the time I apply for my permanent business Permit to Operate.</label>
-	</div>
-
-	<p class="t-small g-small margin-bottom--2x t-base g-base c-steel text-left">Under Article 67 of the San Francisco Administrative Code (called the Sunshine Ordinance), all records held by the City and County of San Francisco may become public. This means information you submit may be requested by any member of the public and could be subject to Sunshine Ordinance disclosure requirements.</p>
+	<p class="t-small g-small border-top margin-top--2x padding-top--2x margin-bottom--2x t-base g-base c-steel text-left">Under Article 67 of the San Francisco Administrative Code (called the Sunshine Ordinance), all records held by the City and County of San Francisco may become public. This means information you submit may be requested by any member of the public and could be subject to Sunshine Ordinance disclosure requirements.</p>
 
 
 </div></section></div></section></div></div>
@@ -397,8 +412,8 @@
 				<img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../cannabis_prototype/images/logo-city.png">
 			</div>
 			<div class="medium-8 medium-centered columns">
-				<p class="c-iron"><a class="a-white" href="http://sf-moh.org">San Francisco Office of Cannabis</a></p>
-				<p class="t-small c-iron margin-top--1x">For registration questions, please email <a class="c-white" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a>.</p>
+				<p class="c-iron"><a class="a-white" href="http://sf-moh.org">San Francisco Office of Cannabis</a><br>
+				<span class="t-small c-iron"><a class="c-white" href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a></span></p>
 			</div>
 		</div>
 
