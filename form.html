@@ -1,6 +1,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="css/toolkit.css">
+<link rel="shortcut icon" type="image/png" href="images/logo-title.jpg">
 <script src="https://sf-dahlia-pattern-library.herokuapp.com//assets/toolkit/scripts/toolkit.js"></script>
 </head>
 <body><button class="button-link skip-link sr-only ng-binding" ng-click="focusOnMainContent()">Skip to main content</button><div class="site-container">
@@ -32,7 +33,7 @@
 <!-- uiView: Business Certificate -->
 <div class="large-12 row ">
 	<div class="form-header no-border">
-		<h3 class="dash-title text-left columns t-gamma t-sans">Information from Business Registration Certificate</h3>
+		<h3 class="dash-title text-left columns t-gamma t-sans"><strong>Information from Business Registration Certificate</strong></h3>
 		<p class="t-base g-base margin-bottom--2x no-caps columns text-left c-charcoal">You must have a business registered before September 15, 2017.</p>
 	</div>
 
@@ -81,7 +82,7 @@
 		<h3 class="form-label no-caps no-margin ng-binding">Copy of your Business Registration Certificate<span class="c-alert">*</span></h3>
 		<p class="t-small p-small padding-bottom--1x c-steel">(Attach scans or photos from a smartphone)</p>
 		<div class="form-field">
-			<span class="label-dollar">Upload 1 file</span>
+			<span class="label-upload">File formats: .jpeg, .jpg, .png, .pdf, .doc, .docx</span>
 			<input type="file" name="address" placeholder="" class=""/>
 		</div>	
 	</div>
@@ -89,18 +90,18 @@
 
 <!-- uiView: About Your Business -->
 <div class="form-header">
-	<h3 class="dash-title text-left margin-bottom--2x columns t-gamma t-sans">About Your Business</h3>
+	<h3 class="dash-title text-left margin-bottom--2x columns t-gamma t-sans"><strong>About Your Business</strong></h3>
 </div>
 
 <div class="form-business row">
 		<div class="large-6 margin-bottom--1x columns">
 			<h3 class="form-label no-caps ng-binding">Contact Email<span class="c-alert">*</span></h3>
-			<input type="text" name="name" placeholder="Email Address" class="" />
+			<input type="text" name="name" placeholder="" class="" />
 		</div>
 
 		<div class="large-6 margin-bottom--1x columns">
 			<h3 class="form-label no-caps ng-binding">Phone</h3>
-			<input type="text" name="name" placeholder="(555) 555-5555" class="" />
+			<input type="text" name="name" placeholder="" class="" />
 		</div>
 
 		<div class="large-12 columns">
@@ -113,7 +114,7 @@
 			<h3 class="form-label no-caps no-margin ng-binding">Proof of the date you started operating</h3>
 			<p class="t-small p-small padding-bottom--1x c-steel">(Attach scans or photos from a smartphone)</p>
 			<div class="form-field">
-			<span class="label-dollar">Upload 1 file</span>
+			<span class="label-upload">File formats: .jpeg, .jpg, .png, .pdf, .doc, .docx</span>
 			<input type="file" name="address" placeholder="" class=""/>
 			</div>
 
@@ -143,7 +144,7 @@
 			<h3 class="form-label no-caps no-margin ng-binding">Copy of the document</h3>
 			<p class="t-small p-small padding-bottom--1x c-steel">(Attach scans or photos from a smartphone)</p>
 			<div class="form-field">
-			<span class="label-dollar">Upload 1 file</span>
+			<span class="label-upload">File formats: .jpeg, .jpg, .png, .pdf, .doc, .docx</span>
 			<input type="file" name="address" placeholder="" class=""/>
 			</div>
 		</div>
@@ -173,7 +174,7 @@
 		<div class="large-12 columns">
 			<h3 class="form-label no-caps ng-binding">Attach a copy</h3>
 			<div class="form-field">
-			<span class="label-dollar">Upload notarized letter</span>
+			<span class="label-upload">File formats: .jpeg, .jpg, .png, .pdf, .doc, .docx</span>
 			<input type="file" name="address" placeholder="" class=""/>
 			</div>
 		</div>
@@ -183,7 +184,7 @@
 
 <!-- uiView: About Your Business -->
 	<div class="large-12 columns form-header">
-		<h3 class="dash-title text-left columns t-gamma t-sans">Zoning</h3>
+		<h3 class="dash-title text-left columns t-gamma t-sans"><strong>Zoning</strong></h3>
 		<p class="t-base g-base no-caps columns text-left c-charcoal">Enter your business address on the <a title="San Francisco Property Information Map" target="blank" href="http://propertymap.sfplanning.org/">San Francisco Property Information Map</a> to find your zoning information.</p>
 	</div>
 
@@ -205,7 +206,7 @@
 <!-- uiView: Permit Type -->
 <div class="form-permit form-type row">
 	<div class="form-header">
-		<h3 class="dash-title text-left columns t-gamma t-sans">Permit Type</h3>
+		<h3 class="dash-title text-left columns t-gamma t-sans"><strong>Permit Type</strong></h3>
 	</div>
 
 	<div class="large-12 column margin-bottom--2x">
@@ -360,10 +361,12 @@
 	</tbody>
 </table>
 </div></div>
-
-	<div class="checkbox margin-bottom--2x">
-		<input id="fee" type="checkbox" name="fee" />
-		<label class="text-left" for="fee">I understand that I will need to pay fees for the temporary permit and inspection. These fees will be due when I apply for my permanent Permit to Operate.</label>
+	
+	<div class="checkbox-statement">
+		<div class="checkbox columns margin-bottom--2x">
+			<input id="fee" type="checkbox" name="fee" />
+			<label class="text-left" for="fee">I understand that I will need to pay fees for the temporary permit and inspection. These fees will be due when I apply for my permanent Permit to Operate.</label>
+		</div>
 	</div>
 
 	<div class="large-12 margin-bottom--2x columns">

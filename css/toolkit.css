@@ -2242,14 +2242,14 @@ input[type="file"] {
   width: 100%; }
 
 .form-group input[type="file"] {
-  width: 50%;
-  position: absolute;
-  left: 60%; }
-@media only screen and (max-width: 48em) {  
-.form-group input[type="file"] {
   width: 40%;
   position: absolute;
-  left: 50%; }}
+  left: 55%; }
+@media only screen and (max-width: 48em) {  
+.form-group input[type="file"] {
+  width: 100%;
+  position: relative;
+  left: 0; }}
 
 /* HTML5 Number spinners settings */
 /* We add basic fieldset styling */
@@ -5286,6 +5286,14 @@ hr.tall {
     padding-right: 16px !important; } }
 
 @media screen and (min-width: 48.0625em) {
+  .padding--3x, .padding-right--3x {
+    padding-right: 64px !important; } }
+
+@media screen and (max-width: 48.0625em) {
+  .padding--3x, .padding-right--3x {
+    padding-right: 64px !important; } }
+
+@media screen and (min-width: 48.0625em) {
   .padding--1x, .padding-bottom--1x {
     padding-bottom: 8px !important; } }
 
@@ -5539,6 +5547,7 @@ hr.tall {
 
 .margin-top-none {
   margin-top: 0 !important; }
+
 
 .margin-left-none {
   margin-left: 0 !important; }
@@ -7043,6 +7052,12 @@ label {
   padding-bottom: 2rem !important;
 }
 
+@media only screen and (max-width: 48em) {
+.form-email  .small-3 {
+    width: 100%; }
+.form-email  .small-9 {
+    width: 100%; }}
+
 .intro-text ul li {
   line-height: 1.375;
     list-style-type: initial;
@@ -8470,6 +8485,11 @@ table {
       padding-top: 4rem;
       padding-bottom: 6rem; } }
 
+  @media only screen and (min-width: 48.0625em) {
+    .block.form-email {
+      padding-top: 2rem;
+      padding-bottom: 4rem; } }
+
 .icon-block,
 .block--icon {
   padding: 2rem;
@@ -9702,6 +9722,10 @@ input[type="radio"] + label::before {
   vertical-align: .2em;
   width: 1.25rem; }
 
+.checkbox-statement input[type="checkbox"] + label::before {
+  margin-right: 1.25em;
+  float: left;}
+
 input[type="radio"] + label::before {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px #ccc;
   height: 1.2rem;
@@ -9835,6 +9859,11 @@ div.tlab {
     left: 0.825rem;
     font-size: 1rem;
     line-height: 1.625; }
+
+@media only screen and (max-width: 48em) {
+span.label-upload {
+    display: none;
+}}
 
 .form-editable {
   position: relative; }
