@@ -5278,6 +5278,14 @@ hr.tall {
     padding-top: 16px !important; } }
 
 @media screen and (min-width: 48.0625em) {
+  .padding--3x, .padding-top--3x {
+    padding-top: 64px !important; } }
+
+@media screen and (max-width: 48.0625em) {
+  .padding--3x, .padding-top--3x {
+    padding-top: 32px !important; } }
+
+@media screen and (min-width: 48.0625em) {
   .padding--2x, .padding-right--2x {
     padding-right: 32px !important; } }
 
@@ -12011,20 +12019,30 @@ ul.bullet-list {
 
 .break-section-big {
   padding: 2rem 0; }
+  @media only screen and (max-width: 48em) {
+    .break-section-big {
+      padding: 3rem 0; } }
   @media only screen and (min-width: 48.0625em) {
     .break-section-big {
       padding: 4rem 0; } }
+
 .break-section-small {
   padding: 1rem 0; }
+  @media only screen and (max-width: 48em) {
+    .break-section-small {
+      padding: 2rem 0; } }
   @media only screen and (min-width: 48.0625em) {
     .break-section-small {
       padding: 2rem 0; } }
+
 .break-section-tiny {
   padding: .5rem 0; }
+  @media only screen and (max-width: 48em) {
+    .break-section-tiny {
+      padding: 1rem 0; } }
   @media only screen and (min-width: 48.0625em) {
     .break-section-tiny {
       padding: 1rem 0; } }
-
 
 .results-section {
   padding: 1rem 0; }
