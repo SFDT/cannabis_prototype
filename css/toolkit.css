@@ -7634,6 +7634,15 @@ button,
     background-color: #fff;
     border-color: #0077da;
     color: #0077da; }
+
+
+button.white,
+  button.button.white,
+  .button.white {
+    background-color: #fff;
+    border-color: #fff;
+    color: #0077da; }
+
     button.secondary svg use, button.ghost-white svg use,
     button.button.ghost-white svg use,
     .button.secondary svg use,
@@ -7649,6 +7658,14 @@ button,
     .button.ghost-white:hover {
       background-color: #0077da;
       color: #fff; }
+
+  button.white:hover,
+    .button.white:hover {
+      background-color: #daeeff;
+      color: #0077da;
+      border-color: #c4d6e5; }
+
+
       button.secondary:hover svg use, button.ghost-white:hover svg use,
       .button.secondary:hover svg use,
       .button.ghost-white:hover svg use {
@@ -7673,6 +7690,7 @@ button,
         background-color: #fff;
         border-color: #0077da;
         color: #0077da; }
+
   button.tertiary,
   .button.tertiary {
     background-color: #fff;
@@ -7753,8 +7771,8 @@ button,
         color: #e31c3d; }
   button.deep,
   .button.deep {
-    background-color: #0067be;
-    border-color: #0067be;
+    background-color: #0077da;
+    border-color: #fff;
     color: #fff; }
     button.deep svg use,
     .button.deep svg use {
@@ -10380,7 +10398,7 @@ input.icon-input-field {
       font-size: 0.8125rem; } }
   .top-bar-section ul.nav-menu li > a:hover,
   .top-bar-section ul.nav-menu li:not(.has-form) a:not(.button):hover {
-    border-bottom-color: #0077da; }
+    border-bottom-color: #0067be; }
 
 .top-bar-section ul.dropdown {
   box-shadow: 0px 2px 0px 6px rgba(0, 0, 0, 0.03); }
@@ -11226,8 +11244,7 @@ body.body-block {
   .top-bar .toggle-topbar.menu-icon {
     margin-top: 0;
     padding-right: .5rem;
-    top: 0;
-    display: none; }
+    top: 0;}
 
 .title-area {
   width: 100%; }
@@ -11241,12 +11258,22 @@ body.body-block {
   z-index: 2; }
   @media only screen and (min-width: 48.0625em) {
     .hero-header {
-      padding: 6rem 1rem 4rem 1rem; } }
+      padding: 5rem 1rem 4rem 1rem; } }
+
+a#hero-header-email {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.hero-header a.button {
+    text-decoration: none;
+}
 
 .hero-title {
     font-weight: 600;
     font-size: 3.5rem;
-    line-height: 1.2;
+    line-height: 1.15;
+    padding-bottom: 25px;
 }
 @media only screen and (max-width: 48em) {
   .hero-title {
@@ -11261,9 +11288,18 @@ body.body-block {
   .hero-text {
   font-size: 0.875rem;
   padding: 0 2rem;
-  text-align: center;
-}
-}
+  text-align: center;}}
+
+.hero-header button {
+    width: auto;}
+@media only screen and (max-width: 48em) {
+.hero-header a.button {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;}}
+.hero-header a.button:last-of-type {
+    margin-bottom: 2.5rem;}}
 
 .splash-header {
   position: relative; }

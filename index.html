@@ -12,11 +12,38 @@
 <section ui-view="version" class="ng-scope"><div class="version-bar bar bg-charcoal ng-scope"><div class="row"><div class="medium-12 columns"><p class="text-right t-small c-white no-margin">This site is new. <a target="_blank" class="a-white lined" href="https://docs.google.com/forms/d/e/1FAIpQLSdwgsS1jkPH4dWq-63GDj94ugjhJw79u3xE_kF9e0MkLhMCgw/viewform"><strong>Let us know what you think</strong></a>.</p></div></div></div></section>
 
 <!-- uiView: navigation -->
-<section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row"><ul class="title-area"><li class="name"><h1 class="name-logo t-alt-sans"><a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="index.html">San Francisco Office of Cannabis</a></h1></li><li class="toggle-topbar menu-icon"><button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu<span class="ui-icon ui-static ui-large i-primary"><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu"></use></svg></span></button></li></ul>
+<section ui-view="navigation" class="ng-scope"><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-bar.html'" class="ng-scope"><nav class="top-bar ng-isolate-scope" ng-transclude="" id="nav-top-bar" role="navigation" top-bar="" style="height: 75px;"><div class="row ng-scope" id="nav-top-bar-row">
+	<ul class="title-area">
+		<li class="name">
+			<h1 class="name-logo t-alt-sans">
+				<a class="topfocus" title="San Francisco Office of Cannabis" ui-sref="dahlia.welcome" href="index.html">San Francisco Office of Cannabis</a>
+			</h1>
+			</li>
+			<li class="toggle-topbar menu-icon">
+				<button aria-label="Open Menu" class="button-link t-caps open-nav-mobile" ng-click="openNavMobile();focusOnNavMobile()">Menu
+					<span class="ui-icon ui-static ui-large i-primary">
+					<svg>
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#i-menu">#shadow-root (closed)
+							<svg id="i-menu" viewBox="0 0 32 32" width="100%" height="100%">
+								<title>menu</title>
+								<path d="M26.24 14.4h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM26.24 20.8h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6zM5.76 11.2h20.48c0.883 0 0.96-0.715 0.96-1.6s-0.077-1.6-0.96-1.6h-20.48c-0.883 0-0.96 0.715-0.96 1.6s0.077 1.6 0.96 1.6z"></path>
+							</svg>
+							</use>
+					</svg>
+				</span>
+			</button>
+		</li>
+	</ul>
 
 <section class="top-bar-section">
 
 <!-- ngInclude: 'shared/templates/nav/_nav_items.html' -->
+<ul class="nav-menu right ng-scope" ng-include="'shared/templates/nav/_nav_items.html'">
+	<li class="ng-scope"><a ui-sref="dahlia.listings" href="index.html">Home</a></li>
+	<li class="ng-scope"><a ui-sref="dahlia.listings" href="index.html#registration-details">Register</a></li>
+	<li class="ng-scope"><a ui-sref="dahlia.favorites" href="comment.html">Comment</a></li>
+</ul>
+
 </section></div></nav></ng-include><!-- ngInclude: --><ng-include src="'shared/templates/nav/nav-mobile.html'" class="ng-scope"></ng-include></section><div bs-loading-overlay="" class="loading-overlay">
 
 <!-- uiView: container -->
@@ -26,13 +53,15 @@
 		<header class="hero-header">
 			<div class="large-6 columns">
 				<h1 class="hero-title t-sans c-white ng-binding">New regulation for cannabis businesses</h1>
+				<a class="button white" href="#registration-details" role="button">register your business</a>
+				<a class="button deep" href="comment.html" role="button">comment on legislation</a>
 			</div>
 			<div class="row">
 				<div class="large-6 columns">
-					<p class="hero-text t-base g-base text-left c-white">With the passage of Proposition 64 (2016), San Francisco is developing a new and comprehensive commercial cannabis business regulatory structure, and we want everyone to have a chance to comment on the new structure.</p>
-					<p class="hero-text t-base g-base text-left c-white">As soon as the City has finalised a draft of the legislation, it will be posted here for you to comment on. It should be available by the end of September 2017.</p>
-					<p class="hero-text t-base g-base text-left c-white">The first comment period will last 30 days. After the comment period, the legislation will go to commissions, committees and then to the Board of Supervisors. All of your comments will be forwarded to these groups.</p>
-					<p class="hero-text t-base g-base text-left c-white">You can still be part of the process of developing these regulations, even after comments have closed.</p>
+					<p class="hero-text t-base text-left c-white">With the passage of Proposition 64 (2016), San Francisco is developing a new and comprehensive commercial cannabis business regulatory structure, and we want everyone to have a chance to comment on the new structure.</p>
+					<p class="hero-text t-base text-left c-white">As soon as the City has finalised a draft of the legislation, it will be posted here for you to comment on. It should be available by the end of September 2017.</p>
+					<p class="hero-text t-base text-left c-white">The first comment period will last 30 days. After the comment period, the legislation will go to commissions, committees and then to the Board of Supervisors. All of your comments will be forwarded to these groups.</p>
+					<p class="hero-text t-base text-left c-white">You can still be part of the process of developing these regulations, even after comments have closed.</p>
 				</div>
 			</div>
 		</header>
@@ -47,31 +76,32 @@
 
 <section class="break-section-big"></section>
 <div class="intro-text">
-	<div class="page-header">
+	<div class="page-header" id="registration-details">
 		<h3 class="t-alpha t-sans no-caps">Cannabis business registration</h3>
 		<img alt="City &amp; County of San Francisco Logo" class="city-logo margin-bottom--2x" src="../cannabis_prototype/images/logo-city.png">
 	</div>
 	<div class="large-10 medium-centered columns">
-		<p class="t-epsilon g-epsilon text-left c-steel">If you operate a medicinal cannabis business that cultivates, manufactures, tests, distributes or delivers in San Francisco, you can register now with the Office of Cannabis. If you register, we will check your application, zoning and inspect your business. There will probably be a fee for the inspection. The registration will only be open until October 31, 2017.</p>
+		<p class="t-epsilon text-left c-steel">If you operate a medicinal cannabis business that cultivates, manufactures, tests, distributes or delivers in San Francisco, you can register now with the Office of Cannabis. If you register, we will check your application, zoning and inspect your business. There will probably be a fee for the inspection. The registration will only be open until October 31, 2017.</p>
 
-		<p class="t-epsilon g-epsilon text-left c-steel">If your business meets the requirements you will be issued a temporary permit to operate a medicinal cannabis business by the City. Businesses with a temporary permit to operate will then be eligible for the State Temporary License which the State will make available on January 1, 2018.</p>
+		<p class="t-epsilon text-left c-steel">If your business meets the requirements you will be issued a temporary permit to operate a medicinal cannabis business by the City. Businesses with a temporary permit to operate will then be eligible for the State Temporary License which the State will make available on January 1, 2018.</p>
 
-		<p class="t-epsilon g-epsilon text-left c-steel">The City intends to issue permanent permits for medical and adult use cannabis commercial activity in 2018.</p>
+		<p class="t-epsilon text-left c-steel">The City intends to issue permanent permits for medical and adult use cannabis commercial activity in 2018.</p>
 
-		<p class="t-epsilon g-epsilon text-left c-steel">The City’s process for issuing permanent permits is being decided as the legislation is debated. We will accept comments on the legislation shortly.</p>
+		<p class="t-epsilon text-left c-steel">The City’s process for issuing permanent permits is being decided as the legislation is debated. We will accept comments on the legislation shortly.</p>
 
-		<p class="t-epsilon g-epsilon padding-bottom--2x text-left c-steel">If you have a permit to operate a retail medical cannabis dispensary, you do not need to apply for a temporary permit at this point.</p>
+		<p class="t-epsilon padding-bottom--2x text-left c-steel">If you have a permit to operate a retail medical cannabis dispensary, you do not need to apply for a temporary permit at this point.</p>
 
-		<p class="t-epsilon g-epsilon border-top padding-top--3x margin-top--2x text-left c-steel">We are registering cannabis businesses by location. To complete the registration, you will need:
-			<ul class="t-epsilon g-epsilon text-left c-steel">
+		<h3 class="t-beta t-sans a-deep no-caps text-left border-top margin-top--2x padding-top--3x">What you need to register</h3>
+		<p class="t-epsilon margin-top--2x text-left c-steel">We are registering cannabis businesses by location. To complete the registration, you will need:
+			<ul class="t-epsilon text-left c-steel">
 				<li>your <a title="Business Registration Certificate" target="_blank" href="https://businessportal.sfgov.org/reg-cert">Business Registration Certificate</a></li>
 				<li>when your business started operating, with copies of invoices, rent, utility bills and other documents to confirm the date</li>
 				<li>all the permits, licences and registrations your business holds for that location</li>
-				<li>your deed or a notarized letter from your landlord consenting to any cannabis business operations on the premises</li>
-				<li>zoning parcel block, which you will need to look up <a title="San Francisco Property Information Property Tab" target="_blank" href="http://propertymap.sfplanning.org/">on the Property tab of the SF property information map</a></li>
+				<li>your deed or both a notarized letter from your landlord consenting to any cannabis business operations on the premises and a copy of your current lease </li>
+				<li>zoning parcel block/lot, which you will need to look up <a title="San Francisco Property Information Property Tab" target="_blank" href="http://propertymap.sfplanning.org/">on the Property tab of the SF property information map</a></li>
 				<li>zoning district <a title="San Francisco Property Information Zoning Tap" target="_blank" href="http://propertymap.sfplanning.org/">from the Zoning tab of the SF property information map</a></li>
 			</ul>
-			<p class="t-epsilon g-epsilon text-left c-steel">If you don't have the information we are requesting or you have questions, email <a href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a></p>
+			<p class="t-epsilon text-left c-steel">If you don't have the information we are requesting or you have questions, email <a href="mailto:officeofcannabis@sfgov.org">officeofcannabis@sfgov.org</a></p>
 		</p>
 	</div>
 </div>
@@ -84,7 +114,7 @@
 		<div class="block large-10 medium-centered columns form-email">
 			<figure class="block-icon">
 				<img alt="Mail Icon" ng-src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-mail-411f07e0458ebc3cb0c83d5f5bb7a6db0f23905ca4f57465112bcf1ddb12bf80.png" src="https://d2f6hbfp4x3dyk.cloudfront.net/assets/icon-mail-411f07e0458ebc3cb0c83d5f5bb7a6db0f23905ca4f57465112bcf1ddb12bf80.png"></figure>
-			<p class="t-epsilon g-epsilon text-left c-charcoal ng-binding">If you have a new cannabis business, you cannot register now. Sign up and we will let you know when the City is registering new cannabis businesses.</p>
+			<p class="t-epsilon text-left c-charcoal ng-binding">If you have a new cannabis business, you cannot register now. Sign up and we will let you know when the City is registering new cannabis businesses.</p>
 					<br>
 
 			<div class="small-9 columns">
